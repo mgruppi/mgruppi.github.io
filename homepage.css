@@ -1,0 +1,22 @@
+:root{
+  --color1: #003f5c;
+  --color2: #444e86;
+  --color3: #955196;
+  --color4: #dd5182;
+  --color5: #ff6e54;
+  --color6: #ffa600;
+}
+
+
+body{
+  background-color: #303030;
+  color: #f2f2f2;
+}
+
+.active{
+  background-color: #444e86;
+}
+
+.container{
+  padding-top: 4px;
+}
