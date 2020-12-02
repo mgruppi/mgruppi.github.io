@@ -12,6 +12,27 @@ function responsiveNav() {
     x.className = "topnav";
   }
 }
+
+// Handles tab clicks and highlights selected tab
+function openTab(evt, name){
+  var i, x, tablinks;
+  x = document.getElementsByClassName('container');
+  for (i = 0; i < x.length; ++i)
+  {
+    x[i].style.display = 'none';
+  }
+
+  // Clear tab links
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++){
+    tablinks[i].className = tablinks[i].className.replace(" w3-amber", "");
+  }
+
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " w3-amber";
+}
+
+
 </script>
 
 <head>
@@ -28,7 +49,7 @@ function responsiveNav() {
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="author" content="Maurício Gruppi">
 
 
   <!-- Bootstrap -->
@@ -41,18 +62,16 @@ function responsiveNav() {
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="homepage.css" />
 
-  <!-- Angular scripts -->
-  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular.js" data-semver="1.4.9"></script>
-  <script data-require="angular.js@1.4.x" src="https://code.angularjs.org/1.4.9/angular-route.js" data-semver="1.4.9"></script>
-  <script src="angularModule.js"></script>
-  <script src="headerController.js"></script>
+<!--  W3 -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 
   <title>Maurício Gruppi - Homepage</title>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #444444" ng-controller="HeaderController">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #444444">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -60,24 +79,90 @@ function responsiveNav() {
       <a class="navbar-brand" href="#/">Maurício Gruppi</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="#/" ng-class="{ active: isActive('/')}">Home</a>
+          <button class="w3-bar-item w3-button w3-ripple tablink w3-amber" onclick="openTab(event, 'content-home')">Home</button>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#/about" ng-class="{ active: isActive('/about')}">About</a>
+          <button class="w3-bar-item w3-button w3-ripple tablink " onclick="openTab(event, 'content-about')">About</button>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li> -->
+
       </ul>
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row justify-content-md-center">
-        <ng-view></ng-view>
+<main>
+  <div id="page-content">
+    <div id="content-home" class="container">
+      <div class="row justify-content-md-center">
+        <div class="row">
+            <div class="d-flex flex-column align-items-center">
+                <h1> Maurício Gruppi</h1>
+              <br/>
+              <img src="img/me.jpg" style="width: 100px; margin-bottom: 4px; border-radius: 100%;"></img>
+                <p>
+                  PhD student at Rensselaer Polytechnic Institute - Computer Science
+                </p>
+            </div>
+        </div>
+
+            <div clas="row">
+              <div class="col-md">
+                <h2> News </h2>
+                <ul>
+                  <li>(2020-12-02) Our paper "Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual WordEmbedding Tasks" got accepted at AAAI-2021 [pre-print soon].</li>
+                  <li>(2020-06-08) Paper presented at <a href="https://sites.google.com/view/icwsm2020datachallenge" target="_blank">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media [<a href="https://arxiv.org/pdf/2006.01211.pdf" target="_blank">paper</a>].</li>
+                  <li>(2020-03-21) We have released <a href="https://github.com/melalab/nela-gt-2019/", target="_blank">NELA-GT-2019 </a> - a dataset for assessment of news producer credibility.  </li>
+                  <li>(2020-03-13) RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection. </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+      </div>
+
+    <div id="content-about" class="container" style="display: none;">
+
+            <div class="col col-md">
+            <h1> About me</h1>
+
+            <p>
+            I am a PhD student at Rensselaer Polytechnic Institute (since 2017).
+            My research interests include machine learning and natural language processing methods and applications,
+            particularly to misinformation, and language change and bias.
+            </p>
+            <p>
+            Currently, my research focus on automatic methods for the detection of language change.
+            My goal is to find ways to understand and explain the divergence in language usage in different domains,
+            and how those can be used by humans and machines.
+            </p>
+
+            <div class="col col-sm-auto justify-content-md-center" style="text-align: center;">
+            <img src="img/me.jpg" style="width: 200px; margin-bottom: 4px; border-radius: 100%;"></img>
+            <br>
+            <p>
+             Rensselaer Polytechnic Institute <br/>
+             Troy, NY, USA <p>
+            </div>
+
+            </div>
     </div>
   </div>
 
+
+    <footer class="pt-5 d-flex justify-content-center">
+      <ul class="nav m-0">
+           <li>
+              <a href="https://twitter.com/GruppiMauricio" target="_blank" style="color: white;"><i class="fa fa-twitter fa-3x"></i></a>
+           </li>
+           <li>
+              <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ&hl=en" target="_blank" style="color: white;"> <i class="fa fa-graduation-cap fa-3x"> </i></a>
+           </li>
+           <li>
+              <a href="https://github.com/mgruppi" target="_blank" style="color: white;"> <i class="fa fa-github fa-3x"></i> </a>
+           </li>
+        </ul>
+    </footer>
+
+</main>
 
 
 </body>

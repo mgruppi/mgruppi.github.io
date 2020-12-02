@@ -13,6 +13,14 @@ body{
   color: #f2f2f2;
 }
 
+a:link {
+    color: #456ff7;
+}
+
+a:visited{
+    color: #955196;
+}
+
 .active{
   background-color: #444e86;
 }
