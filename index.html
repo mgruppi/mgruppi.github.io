@@ -46,6 +46,8 @@ function openTab(evt, name){
     gtag('config', 'UA-106871354-1');
   </script>
 
+
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -62,6 +64,7 @@ function openTab(evt, name){
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="homepage.css" />
 
+
 <!--  W3 -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
@@ -71,12 +74,12 @@ function openTab(evt, name){
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #444444">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #444444; padding-bottom:0px;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-bar" aria-controls="top-bar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="#/">Maurício Gruppi</a>
+    <div class="collapse navbar-collapse" id="top-bar">
+      <a class="navbar-brand" href="#/">MG</a>
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
           <button class="w3-bar-item w3-button w3-ripple tablink w3-amber" onclick="openTab(event, 'content-home')">Home</button>
@@ -89,81 +92,82 @@ function openTab(evt, name){
     </div>
   </nav>
 
-<main class="col-md-9 ml-sm-auto col-lg-12 px-md-4 py-4">
-  <div id="page-content">
-    <div id="content-home" class="container">
-      <div class="row justify-content-md-center">
-        <div class="row">
-            <div class="d-flex flex-column align-items-center">
-                <h1> Maurício Gruppi</h1>
-              <br/>
-              <img src="img/me.jpg" style="width: 100px; margin-bottom: 4px; border-radius: 100%;"></img>
-                <p>
-                  PhD student at Rensselaer Polytechnic Institute - Computer Science
-                </p>
-            </div>
-        </div>
+  <div class="container-fluid">
+        <main class="col-md-9 ml-sm-auto col-lg-12 px-md-4 py-4">
+          <div id="page-content">
+            <div id="content-home" class="container">
+              <div class="row justify-content-md-center">
+                <div class="row">
+                    <div class="d-flex flex-column align-items-center">
+                        <h1> Maurício Gruppi</h1>
+                      <br/>
+                      <img src="img/me.jpg" style="width: 100px; margin-bottom: 4px; border-radius: 100%;"></img>
+                        <p>
+                          PhD student at Rensselaer Polytechnic Institute - Computer Science
+                        </p>
+                    </div>
+                </div>
 
-            <div clas="row">
-              <div class="col-md">
-                <h2> News </h2>
-                <ul>
-                  <li>(2020-12-02) Our paper "Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual WordEmbedding Tasks" got accepted at AAAI-2021 [pre-print soon].</li>
-                  <li>(2020-06-08) Paper presented at <a href="https://sites.google.com/view/icwsm2020datachallenge" target="_blank">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media [<a href="https://arxiv.org/pdf/2006.01211.pdf" target="_blank">paper</a>].</li>
-                  <li>(2020-03-21) We have released <a href="https://github.com/melalab/nela-gt-2019/", target="_blank">NELA-GT-2019 </a> - a dataset for assessment of news producer credibility.  </li>
-                  <li>(2020-03-13) RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection. </li>
-                </ul>
+                    <div clas="row">
+                      <div class="col-md">
+                        <h2> News </h2>
+                        <ul>
+                          <li>(2020-12-02) Our paper "Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual WordEmbedding Tasks" got accepted at AAAI-2021 [pre-print soon].</li>
+                          <li>(2020-06-08) Paper presented at <a href="https://sites.google.com/view/icwsm2020datachallenge" target="_blank">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media [<a href="https://arxiv.org/pdf/2006.01211.pdf" target="_blank">paper</a>].</li>
+                          <li>(2020-03-21) We have released <a href="https://github.com/melalab/nela-gt-2019/", target="_blank">NELA-GT-2019 </a> - a dataset for assessment of news producer credibility.  </li>
+                          <li>(2020-03-13) RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection. </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
               </div>
+
+            <div id="content-about" class="container" style="display: none;">
+
+                    <div class="col col-md">
+                    <h1> About me</h1>
+
+                    <p>
+                    I am a PhD student at Rensselaer Polytechnic Institute (since 2017).
+                    My research interests include machine learning and natural language processing methods and applications,
+                    particularly to misinformation, and semantic change and bias.
+                    </p>
+                    <p>
+                    Currently, my research focus on methods for semantic change detection and language representation.
+                    My goal is to find ways to understand and explain the divergence in language usage in different domains,
+                    and how those can be used by humans and machines.
+                    </p>
+
+                    <div class="col col-sm-auto justify-content-md-center" style="text-align: center;">
+                    <img src="img/me.jpg" style="width: 200px; margin-bottom: 4px; border-radius: 100%;"></img>
+                    <br>
+                    <p>
+                     Rensselaer Polytechnic Institute <br/>
+                     Troy, NY, USA <p>
+                    </div>
+
+                    </div>
             </div>
           </div>
 
-      </div>
 
-    <div id="content-about" class="container" style="display: none;">
+            <footer class="pt-5 d-flex justify-content-center">
+              <ul class="nav m-0">
+                   <li>
+                      <a href="https://twitter.com/GruppiMauricio" target="_blank" style="color: white;"><i class="fa fa-twitter fa-3x"></i></a>
+                   </li>
+                   <li>
+                      <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ&hl=en" target="_blank" style="color: white;"> <i class="fa fa-graduation-cap fa-3x"> </i></a>
+                   </li>
+                   <li>
+                      <a href="https://github.com/mgruppi" target="_blank" style="color: white;"> <i class="fa fa-github fa-3x"></i> </a>
+                   </li>
+                </ul>
+            </footer>
 
-            <div class="col col-md">
-            <h1> About me</h1>
-
-            <p>
-            I am a PhD student at Rensselaer Polytechnic Institute (since 2017).
-            My research interests include machine learning and natural language processing methods and applications,
-            particularly to misinformation, and language change and bias.
-            </p>
-            <p>
-            Currently, my research focus on automatic methods for the detection of language change.
-            My goal is to find ways to understand and explain the divergence in language usage in different domains,
-            and how those can be used by humans and machines.
-            </p>
-
-            <div class="col col-sm-auto justify-content-md-center" style="text-align: center;">
-            <img src="img/me.jpg" style="width: 200px; margin-bottom: 4px; border-radius: 100%;"></img>
-            <br>
-            <p>
-             Rensselaer Polytechnic Institute <br/>
-             Troy, NY, USA <p>
-            </div>
-
-            </div>
-    </div>
-  </div>
-
-
-    <footer class="pt-5 d-flex justify-content-center">
-      <ul class="nav m-0">
-           <li>
-              <a href="https://twitter.com/GruppiMauricio" target="_blank" style="color: white;"><i class="fa fa-twitter fa-3x"></i></a>
-           </li>
-           <li>
-              <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ&hl=en" target="_blank" style="color: white;"> <i class="fa fa-graduation-cap fa-3x"> </i></a>
-           </li>
-           <li>
-              <a href="https://github.com/mgruppi" target="_blank" style="color: white;"> <i class="fa fa-github fa-3x"></i> </a>
-           </li>
-        </ul>
-    </footer>
-
-</main>
-
+        </main>
+</div>
 
 </body>
 
