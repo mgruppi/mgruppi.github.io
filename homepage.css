@@ -28,3 +28,7 @@ a:visited{
 .container{
   padding-top: 4px;
 }
+
+.row{
+    margin-bottom: 8px;
+}
