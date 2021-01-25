@@ -11,6 +11,7 @@
 body{
   background-color: #303030;
   color: #f2f2f2;
+  font-size: 16px;
 }
 
 a:link {
@@ -19,6 +20,18 @@ a:link {
 
 a:visited{
     color: #955196;
+}
+
+.list-quick-links {
+    font-size: 16px;
+}
+
+.list-quick-links a:link{
+    color: #FAFaFA;
+}
+
+.list-quick-links a:visited{
+    color: #FAFAFA;
 }
 
 .active{
