@@ -71,12 +71,13 @@ function openTab(evt, name){
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding-bottom:0px;">
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#top-bar" aria-controls="top-bar" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="top-bar">
-      <a class="navbar-brand" href="#/"> <b>M</b></a>
+<!--      <a class="navbar-brand" href="#/"> <b>M</b></a>-->
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
           <button class="w3-bar-item w3-button w3-ripple tablink w3-amber" onclick="openTab(event, 'content-home')">Home</button>
@@ -88,11 +89,12 @@ function openTab(evt, name){
       </ul>
     </div>
   </nav>
+</div>
 
   <div class="container-fluid">
         <main class="col px-0 py-4">
           <div id="page-content">
-            <div id="content-home" class="content-page container-xxl p-0 m-0">
+            <div id="content-home" class="content-page container-fluid p-0 m-0">
                 <div class="row justify-content-md-center p-0 m-0">
                     <div class="col-md-2 m-0 mb-2 px-2">
                         <div class="card bg-dark">
@@ -110,13 +112,45 @@ function openTab(evt, name){
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-7 m-0 px-2">
+
+                    <div class="col-md-6 m-0 mb-2 px-2">
+                          <div class="card bg-dark">
+                            <div class="card-header">
+                                  <h2> News </h2>
+                            </div>
+                           <div class="card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item bg-dark"><p class="date">[2020-12-02] </p>
+                                    <p class="news">
+                                    Our paper "Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual Word Embedding Tasks" got accepted at AAAI-2021 [pre-print soon].
+                                    </p>
+                                </li>
+                                <li class="list-group-item bg-dark"><p class="date">[2020-06-08] </p>
+                                  <p class="news">
+                                  Paper presented at <a href="https://sites.google.com/view/icwsm2020datachallenge" target="_blank">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media [<a href="https://arxiv.org/pdf/2006.01211.pdf" target="_blank">paper</a>].
+                                  </p>
+                              </li>
+                                <li class="list-group-item bg-dark"><p class="date">[2020-03-21] </p>
+                                  <p class="news">
+                                  We have released <a href="https://github.com/melalab/nela-gt-2019/", target="_blank">NELA-GT-2019 </a> - a dataset for assessment of news producer credibility.
+                                  </p>
+                              </li>
+                                <li class="list-group-item bg-dark"><p class="date">[2020-03-13] </p>
+                                  <p class="news">
+                                  RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection.
+                                  </p>
+                              </li>
+                            </ul>
+                          </div>
+                          </div>
+                    </div>
+                    <div class="col-sm-0 col-md-2 m-0 px-2">
                         <div class="card bg-dark mb-2">
                             <div class="card-header text-center">
-                            <h1> Maurício Gruppi</h1>
+                            <h3> Maurício Gruppi</h3>
                             </div>
                             <div class="card-body d-flex flex-column align-items-center">
-                              <img src="img/me.jpg" style="width: 150px; margin-bottom: 4px; border-radius: 100%;">
+                              <img src="img/me.jpg" style="width: 150px; margin-bottom: 4px; border-style: solid; border-width: 2px;">
                             </div>
 
                              <div class="card-footer">
@@ -125,23 +159,6 @@ function openTab(evt, name){
                                 </p>
                              </div>
                         </div>
-
-                          <div class="card bg-dark">
-                            <div class="card-header">
-                                  <h2> News </h2>
-                            </div>
-                           <div class="card-body">
-                            <ul class="list-group">
-                              <li class="list-group-item bg-dark">(2020-12-02) Our paper "Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual Word Embedding Tasks" got accepted at AAAI-2021 [pre-print soon].</li>
-                              <li class="list-group-item bg-dark">(2020-06-08) Paper presented at <a href="https://sites.google.com/view/icwsm2020datachallenge" target="_blank">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media [<a href="https://arxiv.org/pdf/2006.01211.pdf" target="_blank">paper</a>].</li>
-                              <li class="list-group-item bg-dark">(2020-03-21) We have released <a href="https://github.com/melalab/nela-gt-2019/", target="_blank">NELA-GT-2019 </a> - a dataset for assessment of news producer credibility.  </li>
-                              <li class="list-group-item bg-dark">(2020-03-13) RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection. </li>
-                            </ul>
-                          </div>
-                          </div>
-                    </div>
-                    <div class="col-sm-0 col-md-3 m-0 px-2">
-
                     </div>
                 </div>
             </div>
@@ -170,7 +187,7 @@ function openTab(evt, name){
                     </p>
 
                     <div class="col col-sm-auto justify-content-md-center" style="text-align: center;">
-                    <img src="img/me.jpg" style="width: 200px; margin-bottom: 4px; border-radius: 100%;">
+                    <img src="img/me.jpg" style="width: 200px; border-style: solid;">
 
                     <p class="card-text">
                      Rensselaer Polytechnic Institute <br/>
