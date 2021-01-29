@@ -95,59 +95,71 @@ function openTab(evt, name){
         <main class="col px-0 py-4">
           <div id="page-content">
             <div id="content-home" class="content-page container-fluid p-0 m-0">
+
+<!--                LEFT COLUMN-->
                 <div class="row justify-content-md-center p-0 m-0">
-                    <div class="col-md-3 m-0 mb-2 px-2">
-                        <div class="card bg-dark">
-                            <div class="card-header">
-                                <h3> Quick links </h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="container">
-                                    <ul class="list-group list-group-flush list-quick-links">
-                                        <li class="list-group-item bg-dark"><a href="https://twitter.com/GruppiMauricio" target="_blank"><i class="fab fa-twitter"></i>  Twitter</a></li>
-                                        <li class="list-group-item bg-dark"><a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
-                                        <li class="list-group-item bg-dark"><a href="https://github.com/mgruppi" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-0 m-0 mb-2 px-0">
+
                     </div>
 
-                    <div class="col-md-6 m-0 mb-2 px-2">
+<!--                    MIDDLE COLUMN-->
+                    <div class="col-md-9 m-0 mb-2 px-0 pr-2">
                           <div class="card bg-dark">
                             <div class="card-header">
                                   <h2> News </h2>
                             </div>
                            <div class="card-body">
                             <ul class="list-group">
+                                <li class="list-group-item bg-dark">
+                                    <p class="date">[2021-01-15]</p>
+                                    <p class="news">
+                                        We released the pre-print of our paper "Tell Me Who Your Friends Are: Using Content Sharing Behavior for News Source Veracity Detection".
+                                        <br/>
+                                        [<a href="https://arxiv.org/abs/2101.10973" target="_blank">Pre-print</a>]
+                                    </p>
+                                </li>
                                 <li class="list-group-item bg-dark"><p class="date">[2020-12-02] </p>
                                     <p class="news">
-                                    Our paper "Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual Word Embedding Tasks" got accepted at AAAI-2021 [pre-print soon].
+                                        Our paper "Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual Word Embedding Tasks" got accepted at AAAI-2021.
+                                        <br/>
+                                        [Paper]
+                                        [Code]
                                     </p>
                                 </li>
                                 <li class="list-group-item bg-dark"><p class="date">[2020-06-08] </p>
                                   <p class="news">
-                                  Paper presented at <a href="https://sites.google.com/view/icwsm2020datachallenge" target="_blank">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media [<a href="https://arxiv.org/pdf/2006.01211.pdf" target="_blank">paper</a>].
+                                  Paper presented at <a href="https://sites.google.com/view/icwsm2020datachallenge" target="_blank">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media.
+                                      <br/>
+                                      [<a href="https://arxiv.org/pdf/2006.01211.pdf" target="_blank">Paper</a>]
                                   </p>
                               </li>
                                 <li class="list-group-item bg-dark"><p class="date">[2020-03-21] </p>
                                   <p class="news">
                                   We have released <a href="https://github.com/melalab/nela-gt-2019/", target="_blank">NELA-GT-2019 </a> - a dataset for assessment of news producer credibility.
+                                  <br/>
+                                      [<a href="https://arxiv.org/abs/2003.08444", target="_blank">Pre-print</a>]
+                                      [<a href="https://github.com/melalab/nela-gt-2019/", target="_blank">Code</a>]
+                                      [<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO", target="_blank">Dataset</a>]
                                   </p>
                               </li>
                                 <li class="list-group-item bg-dark"><p class="date">[2020-03-13] </p>
                                   <p class="news">
                                   RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection.
+                                      <br/>
+                                      [<a href="https://www.aclweb.org/anthology/2020.semeval-1.11/" target="_blank">Paper</a>]
+                                      [<a href="https://github.com/mgruppi/schme" target="_blank">Code</a>]
                                   </p>
                               </li>
                             </ul>
                           </div>
                           </div>
                     </div>
-                    <div class="col-sm-0 col-md-3 m-0 px-2">
+
+<!--                    RIGHT COLUMN-->
+                    <div class="col-sm-0 col-md-3 m-0 px-0">
                         <div class="card bg-dark mb-2">
-                            <div class="card-header text-center">
-                            <h3> Maurício Gruppi</h3>
+                            <div class="card-header">
+                            <h4> Maurício Gruppi</h4>
                             </div>
                             <div class="card-body d-flex flex-column align-items-center">
                               <img src="img/me.jpg" style="width: 150px; margin-bottom: 4px; border-style: solid; border-width: 2px;">
@@ -155,17 +167,32 @@ function openTab(evt, name){
 
                              <div class="card-footer">
                                 <p class="card-text text-center">
-                                  PhD student at Rensselaer Polytechnic Institute - Computer Science
+                                    PhD student <br/>
+                                    Computer Science <br/>
+                                    Rensselaer Polytechnic Institute
                                 </p>
                              </div>
+                        </div>
+                        <div class="card bg-dark">
+                            <div class="card-header">
+                                <h5> Links </h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="container">
+                                    <ul class="list-group list-group-flush list-quick-links">
+                                        <li class="list-group-item bg-dark"><a href="https://twitter.com/GruppiMauricio" target="_blank"><i class="fab fa-twitter"></i>  Twitter</a></li>
+                                        <li class="list-group-item bg-dark"><a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i> Google Scholar</a></li>
+                                        <li class="list-group-item bg-dark"><a href="https://github.com/mgruppi" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                                        <li class="list-group-item bg-dark"><a href="https://melalab.github.io/index.html" target="_blank"><span><img src="img/mela-logo.png" width="16" height="16"></span> MeLa Lab</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div id="content-about" class="content-page container" style="display: none;">
-
-
+            <div id="content-about" class="content-page container p-0" style="display: none;">
                 <div class="card bg-dark">
                     <div class="col col-md">
 
@@ -176,7 +203,7 @@ function openTab(evt, name){
                     <div class="card-body">
 
                     <p class="card-text">
-                    I am a PhD student at Rensselaer Polytechnic Institute (since 2017).
+                    I am a PhD Student at Rensselaer Polytechnic Institute (since 2017).
                     My research interests include machine learning and natural language processing methods and applications,
                     particularly to misinformation, and semantic change and bias.
                     </p>
