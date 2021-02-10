@@ -83,11 +83,15 @@ function openTab(evt, name){
           <button class="w3-bar-item w3-button w3-ripple tablink w3-amber" onclick="openTab(event, 'content-home')">Home</button>
         </li>
         <li class="nav-item">
+          <button class="w3-bar-item w3-button w3-ripple tablink " onclick="openTab(event, 'content-blog')">Blog</button>
+        </li>
+        <li class="nav-item">
             <button class="w3-bar-item w3-button w3-ripple tablink" onclick="openTab(event, 'content-publications')">Publications</button>
         </li>
         <li class="nav-item">
           <button class="w3-bar-item w3-button w3-ripple tablink " onclick="openTab(event, 'content-about')">About</button>
         </li>
+
 <!--        <li class="nav-item">-->
 <!--            <button class="w3-bar-item w3-button w3-ripple tablink" disabled onclick="openTab(event, 'content-cat')">Cat</button>-->
 <!--        </li>-->
@@ -115,6 +119,18 @@ function openTab(evt, name){
                             </div>
                            <div class="card-body">
                             <ul class="list-group">
+                                <li class="list-group-item bg-dark">
+                                    <p class="date">[2021-02-10]</p>
+                                    <p class="news">
+                                        Check out the <a href="https://github.com/MELALab/nela-gt">newest version</a>
+                                        of our news credibility dataset.
+                                        See the GitHub repository for usage examples.
+                                        <br/>
+                                        [<a href="https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CHMUYZ">Dataset</a>]
+                                        [<a href="https://github.com/MELALab/nela-gt">Code</a>]
+                                        [<a href="https://arxiv.org/pdf/2102.04567.pdf">Paper</a>]
+                                    </p>
+                                </li>
                                 <li class="list-group-item bg-dark">
                                     <p class="date">[2021-01-15]</p>
                                     <p class="news">
@@ -227,6 +243,34 @@ function openTab(evt, name){
                 </div>
             </div>
 
+
+              <div id="content-blog" class="content-page container p-0" style="display: none;">
+                  <div class="row p-0 m-0">
+                      <div class="col-md-9 p-0 pr-1 m-0">
+                          <div class="card bg-dark">
+                              <div class="card-header">
+                                  <h5>MathJax is cool!</h5>
+                              </div>
+                              <div class="card-body">
+                                    Look at this!
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-3 p-0 pl-1 m-0">
+                          <div class="card bg-dark">
+                              <div class="card-header">
+                                <h5>Entries</h5>
+                              </div>
+                              <div class="card-body">
+                                <ul>
+                                    <li>1</li>
+                                    <li>2</li>
+                                </ul>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
 
             <div id="content-publications" class="content-page container-fluid p-0" style="display: none;">
                 <h3>Select publications [<a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ&hl=en">all publications</a>]</h3>
