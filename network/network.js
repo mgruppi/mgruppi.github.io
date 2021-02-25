@@ -6,38 +6,14 @@ var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) { return d.id; }))
         .force('charge', d3.forceManyBody()
       .strength(-200)
-      .theta(0.8)
-      .distanceMax(150)
+      .theta(0.1)
+      .distanceMax(500)
     )
  		.force('collide', d3.forceCollide()
        .radius(d => 40)
        .iterations(2)
      )
     .force("center", d3.forceCenter(width / 2, height / 2));
-
-
-const graph = {
-  "nodes": [
-    {"id": "1", "group": 1},
-    {"id": "2", "group": 2},
-    {"id": "4", "group": 3},
-    {"id": "8", "group": 4},
-    {"id": "16", "group": 5},
-    {"id": "11", "group": 1},
-    {"id": "12", "group": 2},
-    {"id": "14", "group": 3},
-    {"id": "18", "group": 4},
-    {"id": "116", "group": 5}
-  ],
-  "links": [
-    {"source": "1", "target": "2", "value": 1},
-    {"source": "2", "target": "4", "value": 1},
-    {"source": "4", "target": "8", "value": 1},
-    {"source": "4", "target": "8", "value": 1},
-    {"source": "8", "target": "16", "value": 1},
-    {"source": "16", "target": "1", "value": 1}
-  ]
-}
 
 
 function run(graph) {
@@ -98,7 +74,8 @@ function run(graph) {
     label
             .attr("x", function(d) { return d.x+5; })
             .attr("y", function (d) { return d.y+3; })
-            .style("font-size", "16px").style("fill", "#333").style("text-anchor", "middle");
+            .style("font-size", "16px").style("fill", "#333").style("text-anchor", "middle")
+            .style("user-select", "none");
   }
 }
 
@@ -147,16 +124,56 @@ function binomial_sample(n, p, size=1)
     for(var i=0; i < n; ++i)
     {
         cumulative += comb(n, i)*p**i * (1-p)**(n-i);
-
         inverse_cdf[cumulative.toFixed(6)] = i;
     }
 
-    var trial = Math.random().toFixed(6);
-    console.log(Object.keys(inverse_cdf));
 
+    var result = [];
+
+    for(var k = 0; k < size; ++k)
+    {
+        var trial = Math.random().toFixed(6);
+        percentiles = Object.keys(inverse_cdf);
+        var i = 0;
+        // Inefficient search but I'm feeling Javascript lazy.
+        while (trial > percentiles[i] && i < percentiles.length-1)
+        {
+            i++;
+        }
+
+        // console.log(k, trial, percentiles[i], inverse_cdf[percentiles[i]]);
+        result.push(percentiles[i]);
+    }
+    return result;
 }
 
-function generate_graph(n, type="random")
+
+function power_law_sample(n, size=1, xm=1, alpha=2.1)
+{
+    inverse_cdf = {};
+    for(var i=1 ; i < n; ++i)
+    {
+        p_c = 1 - (xm/i)**alpha;
+        inverse_cdf[p_c.toFixed(6)] = i;
+    }
+
+    var result = [];
+    for (var k = 0; k < size; ++k)
+    {
+        var trial = Math.random().toFixed(6);
+        percentiles = Object.keys(inverse_cdf);
+        var i = 0;
+        while(trial > percentiles[i] && i < percentiles.length-1)
+        {
+            ++i;
+        }
+        result.push(percentiles[i]);
+    }
+    return result;
+}
+
+
+function generate_graph(n, type="random", p=0.1)
 {
     var graph = {"nodes": [], "links":[]};
 
@@ -165,31 +182,37 @@ function generate_graph(n, type="random")
         graph["nodes"].push({"id": i});
     }
 
-
     if (type === "random"){
-    var p = 0.25;
+    var p_links = binomial_sample(n, p, n);
+    }
 
-        for(var i=0; i < n; ++i)
+    if (type === "scale-free")
+    {
+        var p_links = power_law_sample(n, n);
+    }
+
+    console.log(p_links);
+    for(var i=0; i < n; ++i)
+    {
+        for(var j=0; j < n; ++j)
         {
-            for(var j=0; j < n; ++j)
-            {
-                if (i == j) continue;
+            if (i == j) continue;
 
-                var trial = Math.random();
-                if(trial < p)
-                {
-                    graph["links"].push({"source": i, "target": j, "weight": 1});
-                }
+            var trial = Math.random();
+            if(trial < p_links[i])
+            {
+                graph["links"].push({"source": i, "target": j, "weight": 1});
             }
         }
     }
 
-    binomial_sample(10, 0.1);
-    binomial_sample(10, 0.9);
-    binomial_sample(10, 0.5);
     console.log(graph);
-    svg.selectAll("g").remove();
+    svg.remove();
+
+    d3.select("#container-svg").append("svg").attr("width", width).attr("height", height);
+    svg = d3.select("svg");
+
     run(graph);
 }
 
-run(graph);
+generate_graph(10);
