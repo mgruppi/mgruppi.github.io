@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>Monty Hall Simulator</title>
+</head>
+
+<body class="bg-dark text-light">
+
+    <div id="container-main" class="container m-8" style="text-align:center">
+        <h1>Monty Hall Simulator</h1>
+
+        <div class="container">
+            <h3>The problem</h3>
+            <p>You are given N doors behind N-1 of which there are goats, and behind exactly one of them is a prize. <br/>
+                Your goal is to obtain the prize behind the prize door. <br/>
+                Once you've picked a door, the game host will open a goat door for you and ask whether you want to change doors. <br/>
+                You can either <b>stick with your current door</b> or <b>switch to another one</b>. <br/>What should you do to increase your chances of winning?
+            </p>
+        </div>
+
+        <div id="container-game" class="container row">
+                <div class="col">
+                    <h2 id="phase-instruction"> Select a door</h2>
+                    <div id="door-group" class="col">
+                        <button id="door-a" class="btn-door btn btn-lg btn-secondary" onclick="chooseDoor(this);">A</button>
+                        <button id="door-b" class="btn-door btn btn-lg btn-secondary" onclick="chooseDoor(this);">B</button>
+                        <button id="door-c" class="btn-door btn btn-lg btn-secondary" onclick="chooseDoor(this);">C</button>
+                    </div>
+                    <div class="row container">
+                        <div class="col">
+                            <label for="game-count">Game</label> <p id="game-count">1</p> 
+                        </div>
+                        <div class="col">
+                            <label for="win-count">Wins</label> <p id="win-count">0</p>
+                            <label for="win-rate">Win rate (%)</label> <p id="win-rate">0</p>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <button id="play-again" class="btn btn btn-sm btn-success" onclick="start_game();">Play Again</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+
+<script>
+    var doors = [];
+    const MAX_DOORS = 3;
+    var phase = 0;
+    var games = 1;
+    var wins = 0;
+    var win_rate = 0;
+    var prize = 0;
+
+    function get_random_int(max)
+    {
+        return Math.floor(Math.random() * Math.floor(max));
+    }
+
+    function randomize_doors()
+    {
+        prize = get_random_int(MAX_DOORS);  // This will be the prize door.
+        
+    }
+
+    function changePhase(p)
+    {
+        phase = p;
+        if (phase == 0)
+        {
+            document.getElementById("phase-instruction").innerHTML = "Select a door";
+        }
+        else if(phase == 1)
+        {
+            document.getElementById("phase-instruction").innerHTML = "Confirm or switch doors";
+        }     
+    }
+
+    function hideDoors()
+    {
+        for (var i = 0; i < doors.length; ++i)
+        {
+            doors[i].classList.add("btn-secondary");
+            doors[i].classList.remove("btn-primary");
+            doors[i].classList.remove("btn-danger");
+            doors[i].classList.remove("btn-success");
+            doors[i].disabled = false;
+        }
+    }
+
+    function selectDoor(elem)
+    {
+        for (var i = 0; i < doors.length; ++i)
+        {
+            doors[i].classList.remove("btn-primary");
+            doors[i].classList.add("btn-secondary")
+        }
+
+        elem.classList.remove("btn-secondary");
+        elem.classList.toggle("btn-primary");
+    }
+
+    function chooseDoor(elem)
+    {
+
+        if (phase == 0){  // First phase, pick a door.
+            selectDoor(elem);
+
+            var to_open = get_random_int(MAX_DOORS);
+            while (doors[to_open] == elem || to_open == prize)
+            {
+                to_open = get_random_int(MAX_DOORS);
+            }
+
+            openDoor(to_open);
+            changePhase(1);
+        }
+        else if (phase == 1)  // Switch or not?
+        {
+            console.log("phase", phase);
+            selectDoor(elem);
+            showResult();
+            updateScores(elem);
+            changePhase(2);
+        }
+    }
+
+    function showResult()
+    {
+        for (var i = 0; i < doors.length; ++i)
+        {
+            doors[i].setAttribute("disabled", true);
+            doors[i].classList.add("btn-danger");
+        }
+        doors[prize].classList.remove("btn-danger");
+        doors[prize].classList.add("btn-success");
+    }
+    
+    function updateScores(elem)
+    {
+        if (doors[prize] == elem)
+        {
+            wins +=1;
+            document.getElementById("phase-instruction").innerHTML = "You win!";
+        }
+        else{
+            document.getElementById("phase-instruction").innerHTML = "You lose";
+        }
+        win_rate = wins/games;
+        games += 1;
+        document.getElementById("game-count").innerHTML = games;
+        document.getElementById("win-count").innerHTML = wins;
+        document.getElementById("win-rate").innerHTML = win_rate.toFixed(2);
+    }
+
+    function openDoor(i)
+    {
+        doors[i].classList.add("btn-danger");
+        doors[i].setAttribute("disabled", true);
+    }
+
+    function start_game()
+    {
+        doors = document.getElementsByClassName("btn-door");
+        hideDoors();
+        randomize_doors();
+        changePhase(0);
+    }
+
+    function setup()
+    {
+        $(document).keypress( function(e){
+            console.log(e.code);
+            if (e.code === "Digit1")
+            {
+                //$("#door-a").trigger("click");
+            }
+            else if (e.code === "Digit2")
+            {
+                //$("#door-b").trigger("click");
+            }
+            else if (e.code === "Digit3")
+            {
+                //$("#door-c").trigger("click");
+            }
+            else if (e.code === "KeyP")
+            {
+                //$("#play-again").trigger("click");
+            }
+        });
+    }
+
+    start_game();
+
+    setup();
+</script>
+
+</html>
