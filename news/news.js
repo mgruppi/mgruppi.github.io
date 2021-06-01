@@ -15,7 +15,8 @@ function readNews()
 
     http.onreadystatechange=(e)=>{
         var r = http.responseText;
-        console.log(r);
+        var data = JSON.parse(r);
+        displayNews(data);
     };
 }
 
