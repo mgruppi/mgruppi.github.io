@@ -1,3 +1,8 @@
+function displayNews(data)
+{
+    console.log(data);
+}
+
 function readNews()
 {
     const http = new XMLHttpRequest();
@@ -6,6 +11,8 @@ function readNews()
     http.send();
 
     http.onreadystatechange=(e)=>{
-        console.log(http.responseText);
+        var d = JSON.parse(http.responseText);
+        console.log(d);
     }
 }
+
