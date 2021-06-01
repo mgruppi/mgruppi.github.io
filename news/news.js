@@ -1,6 +1,6 @@
 function displayNews(data)
 {
-    for (d in data)
+    for (d in data["data"])
     {
         console.log(data[d]);
     }
@@ -10,13 +10,13 @@ function readNews()
 {
     const http = new XMLHttpRequest();
     const url = "https://mgruppi.github.io/news/news.json";
+    http.responseType = "json";
     http.open("GET", url);
     http.send();
 
     http.onreadystatechange=(e)=>{
-        var r = http.responseText;
-        var data = JSON.parse(r);
-        displayNews(data);
+        var r = http.response;
+        displayNews(r);
     };
 }
 
