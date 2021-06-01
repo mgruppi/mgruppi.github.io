@@ -1,0 +1,6 @@
+{
+  "date": "2020-03-13",
+  "text": "RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection.",
+  "links": {"Paper": "https://www.aclweb.org/anthology/2020.semeval-1.11/",
+            "Code": "https://github.com/mgruppi/schme"}
+}
