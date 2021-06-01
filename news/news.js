@@ -1,6 +1,9 @@
 function displayNews(data)
 {
-    console.log(data);
+    for (d in data)
+    {
+        console.log(data[d]);
+    }
 }
 
 function readNews()
@@ -11,8 +14,8 @@ function readNews()
     http.send();
 
     http.onreadystatechange=(e)=>{
-        var d = JSON.parse(http.responseText);
-        console.log(d);
-    }
+        var r = http.responseText;
+        console.log(r);
+    };
 }
 
