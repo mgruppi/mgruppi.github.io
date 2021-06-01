@@ -1,6 +1,6 @@
 function displayNews(data)
 {
-    for (d in data["data"])
+    for (d in data)
     {
         console.log(data[d]);
     }
