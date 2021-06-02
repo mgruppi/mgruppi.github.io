@@ -1,17 +1,24 @@
 [
-      {
-        "date": "2020-03-21",
-        "text": "We have released <a href='https://github.com/melalab/nela-gt-2019/'>NELA-GT-2019</a> - a dataset for assessment of news producer credibility.",
-        "links": {
-              "Paper": "https://arxiv.org/abs/2003.08444",
-              "Code": "https://github.com/melalab/nela-gt-2019/",
-              "Dataset": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO"
-        }
-      },
-      {
-      "date": "2020-03-13",
-      "text": "RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection.",
-      "links": {"Paper": "https://www.aclweb.org/anthology/2020.semeval-1.11/",
-                "Code": "https://github.com/mgruppi/schme"}
-      }
+  {
+    "date": "2020-06-08",
+    "text": "Paper presented at <a href=\"https://sites.google.com/view/icwsm2020datachallenge\" target=\"_blank\">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media.",
+    "links": {
+          "Paper": "https://arxiv.org/pdf/2006.01211.pdf"
+    }
+  },
+  {
+    "date": "2020-03-21",
+    "text": "We have released <a href='https://github.com/melalab/nela-gt-2019/'>NELA-GT-2019</a> - a dataset for assessment of news producer credibility.",
+    "links": {
+          "Paper": "https://arxiv.org/abs/2003.08444",
+          "Code": "https://github.com/melalab/nela-gt-2019/",
+          "Dataset": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO"
+    }
+  },
+  {
+  "date": "2020-03-13",
+  "text": "RPI-Trust group participaed in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection.",
+  "links": {"Paper": "https://www.aclweb.org/anthology/2020.semeval-1.11/",
+            "Code": "https://github.com/mgruppi/schme"}
+  }
   ]
