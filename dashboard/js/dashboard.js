@@ -180,7 +180,7 @@ $(document).on("click", ".activity-chart", function() {
 function load_data(endpoint, params, callback=function(){})
 {
     $.ajax({
-        url: "http://192.168.1.104:5000/"+endpoint,
+        url: "http://mgruppi.me:5000/"+endpoint,
         data: params
     }).done(function(response){
         callback(response);
