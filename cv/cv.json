@@ -12,7 +12,9 @@
   },
 
   "sections": {
-    "sec-education": [
+    "sec-education": {
+      "name": "Education",
+      "items": [
       {
         "name": "PhD in Computer Science",
         "school": "Rensselaer Polytechnic Institute",
@@ -47,42 +49,47 @@
         "start": "2012",
         "end": "2013"
       }
-    ],
-    "sec-research": [
-      {
-        "name": "Research Assistant",
-        "school": "Rensselaer Polytechnic Institute",
-        "country": "USA",
-        "title": "Model and Methods of Semantic Shifts",
-        "advisor": "Sibel Adali",
-        "funding": "IBM-AIRC",
-        "description": "In this project, I studied and developed methods to model semantic differences across communities and groups of speakers of a given language. This was achieved by combining word embeddings and alignment techniques as well as self-supervised learning to optimized the alignment.",
-        "start": "2019",
-        "end": "2021"
-      },
-      {
-        "name": "Undergraduate Research Program",
-        "school": "Hanze Institute of Technology",
-        "country": "The Netherlands",
-        "title": "Eye Tracking Device for Disabled Children",
-        "advisor": "Fenna Feenstra",
-        "description": "The goal of this project was to develop a low-cost solution for physically disabled children to interact with computers by using their eyes. This goal was accomplished by utilizing low-cost, off-the-shelf, hardware components and open source software.",
-        "start": "2012",
-        "end": "2013"
-      },
-      {
-        "name": "Undergraduate Research Program",
-        "school": "Federal University of Viçosa",
-        "country": "Brazil",
-        "title": "Optimization of Water Dam Placement",
-        "advisor": "Marcus V. Alvim Andrade",
-        "funding": "FAPEMIG",
-        "description": "Developed and applied heuristics to determine the best point on a terrain to build a water reservoir dam. Among the objectives of the optimization was the minimization of the flooded area and areas of interest such as natural reserves and roads.",
-        "start": "2011",
-        "end": "2012"
-      }
-    ],
-    "sec-teaching": [
+    ]},
+    "sec-research": {
+        "name": "Research",
+        "items": [
+        {
+          "name": "Research Assistant",
+          "school": "Rensselaer Polytechnic Institute",
+          "country": "USA",
+          "title": "Model and Methods of Semantic Shifts",
+          "advisor": "Sibel Adali",
+          "funding": "IBM-AIRC",
+          "description": "In this project, I studied and developed methods to model semantic differences across communities and groups of speakers of a given language. This was achieved by combining word embeddings and alignment techniques as well as self-supervised learning to optimized the alignment.",
+          "start": "2019",
+          "end": "2021"
+        },
+        {
+          "name": "Undergraduate Research Program",
+          "school": "Hanze Institute of Technology",
+          "country": "The Netherlands",
+          "title": "Eye Tracking Device for Disabled Children",
+          "advisor": "Fenna Feenstra",
+          "description": "The goal of this project was to develop a low-cost solution for physically disabled children to interact with computers by using their eyes. This goal was accomplished by utilizing low-cost, off-the-shelf, hardware components and open source software.",
+          "start": "2012",
+          "end": "2013"
+        },
+        {
+          "name": "Undergraduate Research Program",
+          "school": "Federal University of Viçosa",
+          "country": "Brazil",
+          "title": "Optimization of Water Dam Placement",
+          "advisor": "Marcus V. Alvim Andrade",
+          "funding": "FAPEMIG",
+          "description": "Developed and applied heuristics to determine the best point on a terrain to build a water reservoir dam. Among the objectives of the optimization was the minimization of the flooded area and areas of interest such as natural reserves and roads.",
+          "start": "2011",
+          "end": "2012"
+        }
+      ]
+    },
+    "sec-teaching":{
+      "name": "Teaching",
+      "items": [
       {
         "name": "Teaching Assistant in Computer Science",
         "school": "Rensselaer Polytechnic Institute",
@@ -107,8 +114,8 @@
         "start": "2014",
         "end": "2015"
       }
-    ],
-    "sec-work": [
+    ]},
+    "sec-work":{ "name": "Work", "items": [
       {
         "name": "Frontend Developer",
         "school": "Rensselaer Polytechnic Institute",
@@ -125,19 +132,18 @@
         "start": "2014",
         "end": "2015"
       }
-    ],
-    "sec-skills": [
+    ]},
+    "sec-skills": {"name": "Skills", "items":[
       {
         "Programming Languages": "Python, C++, C, HTML, Javascript, Java, Visual Basic"
       },
       {
         "Other Skills": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)"
       }
-    ],
-    "sec-awards": [
-    ],
-    "sec-publications": [
-    ]
+    ]},
+    "sec-awards": {"name": "Awards", "items":[
+    ]},
+    "sec-publications": {"name":  "Publications", "items":[
+    ]}
   }
-
 }
