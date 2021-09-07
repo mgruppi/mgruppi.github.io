@@ -14,6 +14,7 @@ function make_section(sec_data, sec_div)
     // Loads the section data into the given section div
     var h = document.createElement("h");
     h.classList.add("h3");
+    h.classList.add("section-title");
     h.innerHTML = sec_data["name"];
 
     var dl = document.createElement("dl");
@@ -53,8 +54,11 @@ function make_section(sec_data, sec_div)
 
         if ("school" in sec_data["items"][i])
         {
+            var div_academic = document.createElement("div");
+            div_academic.classList.add(...["d-flex", "flex-column", "description-top"]);
+
             var div_school = document.createElement("div");
-            div_school.classList.add(...["d-flex", "flex-row"]);
+            div_school.classList.add(...["d-flex", "flex-row", "description-field"]);
 
             var p = document.createElement("p");
             p.classList.add("item-school");
@@ -68,43 +72,56 @@ function make_section(sec_data, sec_div)
                 p.innerHTML = sec_data["items"][i]["country"];
                 div_school.appendChild(p);
             }
-            dd.appendChild(div_school);
-        }
+
+            div_academic.appendChild(div_school);
+
+            if ("advisor" in sec_data["items"][i])
+            {
+                var div_advisor = document.createElement("div");
+                div_advisor.classList.add(...["d-flex", "flex-row", "description-field"]);
+
+                var p = document.createElement("p");
+                p.classList.add("item-header");
+                p.innerHTML = "Advisor";
+                div_advisor.appendChild(p);
+
+                var p = document.createElement("p");
+                p.classList.add("item-advisor");
+                p.innerHTML = sec_data["items"][i]["advisor"];
+                div_advisor.appendChild(p);
+
+                div_academic.appendChild(div_advisor);
+            }
+
+            if ("research_topics" in sec_data["items"][i])
+            {
+                var div_research = document.createElement("div");
+                div_research.classList.add(...["d-flex", "flex-row"]);
+
+                var p = document.createElement("p");
+                p.classList.add("item-header");
+                p.innerHTML = "Research Topics";
+                div_research.appendChild(p);
+
+                var p = document.createElement("p");
+                p.classList.add("item-research-topics");
+                p.innerHTML = sec_data["items"][i]["research_topics"];
+                div_research.appendChild(p);
+
+                div_academic.appendChild(div_research);
+            }
+
+                dd.appendChild(div_academic);
+            }
 
 
-        if ("advisor" in sec_data["items"][i])
-        {
-            var div_advisor = document.createElement("div");
-            div_advisor.classList.add(...["d-flex", "flex-row"]);
+            if ("description" in sec_data["items"][i]){
+                var p = document.createElement("p");
+                p.classList.add("item-description");
+                p.innerHTML = sec_data["items"][i]["description"];
 
-            var p = document.createElement("p");
-            p.classList.add("item-header");
-            p.innerHTML = "Advisor";
-            div_advisor.appendChild(p);
-
-            var p = document.createElement("p");
-            p.classList.add("item-advisor");
-            p.innerHTML = sec_data["items"][i]["advisor"];
-            div_advisor.appendChild(p);
-
-            dd.appendChild(div_advisor);
-        }
-
-        if ("research_topics" in sec_data["items"][i])
-        {
-            var p = document.createElement("p");
-            p.classList.add("item-research-topics");
-            p.innerHTML = sec_data["items"][i]["research_topics"];
-            dd.appendChild(p);
-        }
-
-        if ("description" in sec_data["items"][i]){
-            var p = document.createElement("p");
-            p.classList.add("item-description");
-            p.innerHTML = sec_data["items"][i]["description"];
-
-            dd.appendChild(p);
-        }
+                dd.appendChild(p);
+            }
 
         dl.appendChild(dt);
         dl.appendChild(dd);

@@ -1,0 +1,30 @@
+
+p{
+    margin: 1px;
+}
+
+.section-title{
+}
+
+.item-years{
+
+}
+
+.item-header{
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.item-school{
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.item-country{
+    vertical-align: bottom;
+    font-size: small;
+}
+
+.description-field{
+    margin-bottom: 1px;
+}
