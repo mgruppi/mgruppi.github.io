@@ -8,7 +8,8 @@
   },
   "contact":{
     "phone_number": "+1 518 961 2049",
-    "email": "mauricio.gruppi@gmail.com"
+    "email": "mauricio.gruppi@gmail.com",
+    "website": "https://mgruppi.me"
   },
 
   "sections": {
@@ -37,7 +38,6 @@
       {
         "name": "BSc in Computer Science",
         "school": "Federal University of Viçosa",
-        "advisor": "Marcus V. Alvim Andrade",
         "start": "2009",
         "end": "2014"
       },
@@ -65,7 +65,7 @@
           "end": "2021"
         },
         {
-          "name": "Undergraduate Research Program",
+          "name": "Undergraduate Research",
           "school": "Hanze Institute of Technology",
           "country": "The Netherlands",
           "title": "Eye Tracking Device for Disabled Children",
@@ -75,7 +75,7 @@
           "end": "2013"
         },
         {
-          "name": "Undergraduate Research Program",
+          "name": "Undergraduate Research",
           "school": "Federal University of Viçosa",
           "country": "Brazil",
           "title": "Optimization of Water Dam Placement",

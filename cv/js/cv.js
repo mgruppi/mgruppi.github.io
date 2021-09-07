@@ -5,6 +5,7 @@ function make_header(data)
     document.getElementById("address").innerHTML = data["address"]["city"] + ", " + data["address"]["state"];
     document.getElementById("email").innerHTML = data["contact"]["email"];
     document.getElementById("phone").innerHTML = data["contact"]["phone_number"];
+    document.getElementById("website").innerHTML = data["contact"]["website"];
 }
 
 
@@ -22,15 +23,87 @@ function make_section(sec_data, sec_div)
     {
         var dt = document.createElement("dt");
         dt.classList.add("col-sm-3");
-        var desc_str = sec_data["items"][i]["name"];
-        desc_str += "<br/>" + sec_data["items"][i]["start"] + " - " + sec_data["items"][i]["end"];
-        dt.innerHTML = desc_str;
+
+        if("start" in sec_data["items"][i])
+        {
+            var p = document.createElement("p");
+            p.classList.add("item-years");
+            p.innerHTML = sec_data["items"][i]["start"];
+
+            if ("end" in sec_data["items"][i])
+            {
+                p.innerHTML += " - " + sec_data["items"][i]["end"];
+            }
+            dt.appendChild(p);
+        }
+
+        if("name" in sec_data["items"][i])
+        {
+            var p = document.createElement("p");
+            p.classList.add("item-name");
+            p.innerHTML = sec_data["items"][i]["name"];
+
+            dt.appendChild(p);
+        }
 
         var dd = document.createElement("dd");
         dd.classList.add("col-sm-9");
 
+
+
+        if ("school" in sec_data["items"][i])
+        {
+            var div_school = document.createElement("div");
+            div_school.classList.add(...["d-flex", "flex-row"]);
+
+            var p = document.createElement("p");
+            p.classList.add("item-school");
+            p.innerHTML = sec_data["items"][i]["school"];
+            div_school.appendChild(p);
+
+            if ("country" in sec_data["items"][i])
+            {
+                var p = document.createElement("p");
+                p.classList.add("item-country");
+                p.innerHTML = sec_data["items"][i]["country"];
+                div_school.appendChild(p);
+            }
+            dd.appendChild(div_school);
+        }
+
+
+        if ("advisor" in sec_data["items"][i])
+        {
+            var div_advisor = document.createElement("div");
+            div_advisor.classList.add(...["d-flex", "flex-row"]);
+
+            var p = document.createElement("p");
+            p.classList.add("item-header");
+            p.innerHTML = "Advisor";
+            div_advisor.appendChild(p);
+
+            var p = document.createElement("p");
+            p.classList.add("item-advisor");
+            p.innerHTML = sec_data["items"][i]["advisor"];
+            div_advisor.appendChild(p);
+
+            dd.appendChild(div_advisor);
+        }
+
+        if ("research_topics" in sec_data["items"][i])
+        {
+            var p = document.createElement("p");
+            p.classList.add("item-research-topics");
+            p.innerHTML = sec_data["items"][i]["research_topics"];
+            dd.appendChild(p);
+        }
+
         if ("description" in sec_data["items"][i]){
-            dd.innerHTML = sec_data["items"][i]["description"];
+            var p = document.createElement("p");
+            p.classList.add("item-description");
+            p.innerHTML = sec_data["items"][i]["description"];
+
+            dd.appendChild(p);
         }
 
         dl.appendChild(dt);
