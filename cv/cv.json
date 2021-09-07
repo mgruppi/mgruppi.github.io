@@ -133,12 +133,14 @@
         "end": "2015"
       }
     ]},
-    "sec-skills": {"name": "Skills", "items":[
+    "sec-skills": {"name": "Skills & Abilities", "items":[
       {
-        "Programming Languages": "Python, C++, C, HTML, Javascript, Java, Visual Basic"
+        "name": "Programming Languages",
+        "description": "Python, C++, C, HTML, Javascript, Java, Visual Basic"
       },
       {
-        "Other Skills": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)"
+        "name": "Other Skills",
+        "description": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)",
       }
     ]},
     "sec-awards": {"name": "Awards", "items":[
