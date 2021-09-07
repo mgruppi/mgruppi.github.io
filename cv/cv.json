@@ -12,7 +12,7 @@
   },
 
   "sections": {
-    "education": [
+    "sec-education": [
       {
         "name": "PhD in Computer Science",
         "school": "Rensselaer Polytechnic Institute",
@@ -48,7 +48,7 @@
         "end": "2013"
       }
     ],
-    "research": [
+    "sec-research": [
       {
         "name": "Research Assistant",
         "school": "Rensselaer Polytechnic Institute",
@@ -82,7 +82,7 @@
         "end": "2012"
       }
     ],
-    "teaching": [
+    "sec-teaching": [
       {
         "name": "Teaching Assistant in Computer Science",
         "school": "Rensselaer Polytechnic Institute",
@@ -108,7 +108,7 @@
         "end": "2015"
       }
     ],
-    "work": [
+    "sec-work": [
       {
         "name": "Frontend Developer",
         "school": "Rensselaer Polytechnic Institute",
@@ -126,7 +126,7 @@
         "end": "2015"
       }
     ],
-    "skills": [
+    "sec-skills": [
       {
         "Programming Languages": "Python, C++, C, HTML, Javascript, Java, Visual Basic"
       },
@@ -134,9 +134,9 @@
         "Other Skills": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)"
       }
     ],
-    "awards": [
+    "sec-awards": [
     ],
-    "publications": [
+    "sec-publications": [
     ]
   }
 
