@@ -140,7 +140,7 @@
       },
       {
         "name": "Other Skills",
-        "description": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)",
+        "description": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)"
       }
     ]},
     "sec-awards": {"name": "Awards", "items":[

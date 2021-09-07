@@ -66,8 +66,6 @@ function handle_cv(data){
 }
 
 $(document).ready(function(){
-    console.log("loading cv data");
-
     $.ajax({
         url: "https://mgruppi.github.io/cv/cv.json"
     }).done(function(response){
