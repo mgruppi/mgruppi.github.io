@@ -1,0 +1,150 @@
+{
+  "fullname": "Maurício Gouvêa Gruppi",
+  "address": {
+    "city": "Troy",
+    "state": "NY",
+    "country": "USA",
+    "zip": 12180
+  },
+  "contact":{
+    "phone_number": "+1 518 961 2049",
+    "email": "mauricio.gruppi@gmail.com"
+  },
+
+  "education": [
+    {
+      "name": "PhD in Computer Science",
+      "school": "Rensselaer Polytechnic Institute",
+      "country": "USA",
+      "research_topics": "Artificial Intelligence, Machine Learning, Natural Language Processing, Social Networks, Computational Social Science",
+      "advisor": "Sibel Adali",
+      "start": "2017",
+      "end": "ongoing"
+    },
+    {
+      "name": "MSc in Computer Science",
+      "school": "Federal University of Viçosa",
+      "country": "Brazil",
+      "thesis": "Topologically Consistent Geometry Simplification on 2D and 3D models",
+      "advisor": "Marcus V. Alvim Andrade",
+      "funding": "Capes",
+      "start": "2014",
+      "end": "2016"
+    },
+    {
+      "name": "BSc in Computer Science",
+      "school": "Federal University of Viçosa",
+      "advisor": "Marcus V. Alvim Andrade",
+      "start": "2009",
+      "end": "2014"
+    },
+    {
+      "name": "Advanced Sensor Applications (ASA)",
+      "school": "Hanze Institute of Technology",
+      "country": "The Netherlands",
+      "funding": "Capes/Nuffic",
+      "start": "2012",
+      "end": "2013"
+    }
+  ],
+
+  "research": [
+    {
+      "name": "Research Assistant",
+      "school": "Rensselaer Polytechnic Institute",
+      "country": "USA",
+      "title": "Model and Methods of Semantic Shifts",
+      "advisor": "Sibel Adali",
+      "funding": "IBM-AIRC",
+      "description": "In this project, I studied and developed methods to model semantic differences across communities and groups of speakers of a given language. This was achieved by combining word embeddings and alignment techniques as well as self-supervised learning to optimized the alignment.",
+       "start": "2019",
+       "end": "2021"
+    },
+    {
+      "name": "Undergraduate Research Program",
+      "school": "Hanze Institute of Technology",
+      "country": "The Netherlands",
+      "title": "Eye Tracking Device for Disabled Children",
+      "advisor": "Fenna Feenstra",
+      "description": "The goal of this project was to develop a low-cost solution for physically disabled children to interact with computers by using their eyes. This goal was accomplished by utilizing low-cost, off-the-shelf, hardware components and open source software.",
+       "start": "2012",
+       "end": "2013"
+    },
+    {
+      "name": "Undergraduate Research Program",
+      "school": "Federal University of Viçosa",
+      "country": "Brazil",
+      "title": "Optimization of Water Dam Placement",
+      "advisor": "Marcus V. Alvim Andrade",
+      "funding": "FAPEMIG",
+      "description": "Developed and applied heuristics to determine the best point on a terrain to build a water reservoir dam. Among the objectives of the optimization was the minimization of the flooded area and areas of interest such as natural reserves and roads.",
+       "start": "2011",
+       "end": "2012"
+    }
+  ],
+
+  "teaching": [
+    {
+      "name": "Teaching Assistant in Computer Science",
+      "school": "Rensselaer Polytechnic Institute",
+      "country": "USA",
+      "description": "Teaching Assistant to the Department of Computer Science at RPI. Provided assistance to programming and data structures courses (VB, Python and C++).",
+       "start": "2017",
+       "end": "2019"
+    },
+    {
+      "name": "Lecturer of Computer Science",
+      "school": "Federal University of Viçosa",
+      "country": "Brazil",
+      "description": "Taught programming courses to undergraduate students (C++ and Python).",
+       "start": "2015",
+       "end": "2017"
+    },
+    {
+      "name": "Teaching Assistant in Computer Science",
+      "school": "Federal University of Viçosa",
+      "country": "Brazil",
+      "description": "Provided assitance to Programming Lab sessions.",
+       "start": "2014",
+       "end": "2015"
+    }
+  ],
+
+  "work":[
+    {
+      "name": "Frontend Developer",
+      "school": "Rensselaer Polytechnic Institute",
+      "country": "Brazil",
+      "description": "Worked developing the interface for MetPetDB at RPI over the summer of 2019 (HTML, Javascript and Python).",
+       "start": "2019",
+       "end": "2019"
+    },
+    {
+      "name": "Frontend Developer",
+      "school": "Federal University of Viçosa",
+      "country": "Brazil",
+      "description": "Developed educational games and applications to support remote learning for high school and undergraduate students (Flash and ActionScript).",
+       "start": "2014",
+       "end": "2015"
+    }
+  ],
+
+  "skills":
+  [
+    {
+      "Programming Languages": "Python, C++, C, HTML, Javascript, Java, Visual Basic"
+    },
+    {
+      "Other Skills": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)"
+    }
+  ],
+
+  "awards":
+  [
+  ],
+
+  "publications":[
+
+  ]
+
+}
