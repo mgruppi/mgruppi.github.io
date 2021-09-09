@@ -1,5 +1,12 @@
 [
   {
+    "date": "2021-09-09",
+    "text": "We have released SenSE, a system for Semantic Shift Exploration and Visualization. Check it out <a href='https://sense.mgruppi.me'>here</a>."
+    "links": {
+      "Demo": "https://sense.mgruppi.me"
+    }
+  },
+  {
     "date": "2021-02-10",
     "text": "Check out the <a href=\"https://github.com/MELALab/nela-gt\">latest version</a> of our news source credibility dataset. See the GitHub repository for usage examples.",
     "links": {
