@@ -1,7 +1,7 @@
 [
   {
     "date": "2021-09-09",
-    "text": "We have released SenSE, a system for Semantic Shift Exploration and Visualization. Check it out <a href='https://sense.mgruppi.me'>here</a>."
+    "text": "We have released SenSE, a system for Semantic Shift Exploration and Visualization. Check it out <a href='https://sense.mgruppi.me'>here</a>.",
     "links": {
       "Demo": "https://sense.mgruppi.me"
     }
