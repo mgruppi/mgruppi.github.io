@@ -7,6 +7,23 @@
   --color6: #ffa600;
 }
 
+::-webkit-scrollbar{
+    width: 4px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 
 body{
   background-color: #2c2f33;
@@ -65,3 +82,12 @@ a:visited{
     font-size: 14px;
     color: #FAFAFA;
 }
+
+.news-feed-container{
+}
+
+.news-feed{
+    max-height: 600px;
+    overflow: auto;
+}
+
