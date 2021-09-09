@@ -25,11 +25,11 @@ function openTab(evt, name){
   // Clear tab links
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++){
-    tablinks[i].className = tablinks[i].className.replace(" w3-amber", "");
+    tablinks[i].classList.remove("btn-warning");
   }
 
   document.getElementById(name).style.display = "block";
-  evt.currentTarget.className += " w3-amber";
+  evt.currentTarget.classList.add("btn-warning");
 }
 
 
@@ -60,10 +60,6 @@ function openTab(evt, name){
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="homepage.css" />
 
-
-    <!--  W3 -->
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" crossorigin="anonymous">
-
     <link rel="icon" href="img/rpi_seal.png">
     <title>Maurício Gruppi - Homepage</title>
 
@@ -83,16 +79,16 @@ function openTab(evt, name){
 <!--      <a class="navbar-brand" href="#/"> <b>M</b></a>-->
       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <button class="w3-bar-item w3-button w3-ripple tablink w3-amber" onclick="openTab(event, 'content-home')">Home</button>
+          <button class="tablink btn btn-secondary btn-warning" onclick="openTab(event, 'content-home')">Home</button>
         </li>
 <!--        <li class="nav-item">-->
 <!--          <button class="w3-bar-item w3-button w3-ripple tablink " onclick="openTab(event, 'content-blog')">Blog</button>-->
 <!--        </li>-->
         <li class="nav-item">
-            <button class="w3-bar-item w3-button w3-ripple tablink" onclick="openTab(event, 'content-publications')">Publications</button>
+            <button class="tablink btn btn-secondary" onclick="openTab(event, 'content-publications')">Publications</button>
         </li>
         <li class="nav-item">
-          <button class="w3-bar-item w3-button w3-ripple tablink " onclick="openTab(event, 'content-about')">About</button>
+          <button class="tablink btn btn-secondary" onclick="openTab(event, 'content-about')">About</button>
         </li>
 
 <!--        <li class="nav-item">-->
