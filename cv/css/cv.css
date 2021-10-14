@@ -1,11 +1,10 @@
 
 p{
     margin: 0px;
-
 }
 
 .section-title{
-
+    margin-bottom: 8px;
 }
 
 .section-data{
@@ -33,6 +32,11 @@ p{
 
 .description-field{
     margin-bottom: 0px;
+}
+
+.description-row{
+    margin-bottom: 4px;
+    padding-left: 20px;
 }
 
 .cv-header{

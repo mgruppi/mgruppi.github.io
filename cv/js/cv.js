@@ -12,10 +12,12 @@ function make_header(data)
 function make_section(sec_data, sec_div)
 {
     // Loads the section data into the given section div
+    var h_div = document.createElement("div");
+    h_div.classList.add("section-title");
     var h = document.createElement("h");
     h.classList.add("h3");
-    h.classList.add("section-title");
     h.innerHTML = sec_data["name"];
+    h_div.appendChild(h);
 
     // Create dl element to store section columns
     var dl = document.createElement("dl");
@@ -25,17 +27,18 @@ function make_section(sec_data, sec_div)
     {
         var dt = document.createElement("dt");
         dt.classList.add("col-sm-3");
+        dt.classList.add("description-row");
 
         // Handles row header with dates (start/end years).
         if("start" in sec_data["items"][i])
         {
             var p = document.createElement("p");
             p.classList.add("item-years");
-            p.innerHTML = sec_data["items"][i]["start"];
+            p.innerHTML = "[" + sec_data["items"][i]["start"];
 
             if ("end" in sec_data["items"][i])
             {
-                p.innerHTML += " - " + sec_data["items"][i]["end"];
+                p.innerHTML += " - " + sec_data["items"][i]["end"] + "]";
             }
             dt.appendChild(p);
         }
@@ -132,7 +135,7 @@ function make_section(sec_data, sec_div)
         dl.appendChild(dt);
         dl.appendChild(dd);
     }
-    sec_div.append(h);
+    sec_div.append(h_div);
     sec_div.appendChild(dl);
 
     return sec_div;
