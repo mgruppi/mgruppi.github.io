@@ -2,10 +2,10 @@
 function make_header(data)
 {
     document.getElementById("fullname").innerHTML = data["fullname"];
-    document.getElementById("address").innerHTML = data["address"]["city"] + ", " + data["address"]["state"];
-    document.getElementById("email").innerHTML = data["contact"]["email"];
-    document.getElementById("phone").innerHTML = data["contact"]["phone_number"];
-    document.getElementById("website").innerHTML = data["contact"]["website"];
+    document.getElementById("address").innerHTML = "<i class='fas fa-home'></i>" + data["address"]["city"] + ", " + data["address"]["state"];
+    document.getElementById("email").innerHTML = "<i class='fas fa-envelope'></i>"+data["contact"]["email"];
+    document.getElementById("phone").innerHTML = "<i class='fas fa-phone-square-alt'></i>" + data["contact"]["phone_number"];
+    document.getElementById("website").innerHTML = "<i class='fas fa-external-link-square-alt'></i>" + data["contact"]["website"];
 }
 
 
@@ -17,6 +17,7 @@ function make_section(sec_data, sec_div)
     h.classList.add("section-title");
     h.innerHTML = sec_data["name"];
 
+    // Create dl element to store section columns
     var dl = document.createElement("dl");
     dl.classList.add("row");
 
@@ -25,6 +26,7 @@ function make_section(sec_data, sec_div)
         var dt = document.createElement("dt");
         dt.classList.add("col-sm-3");
 
+        // Handles row header with dates (start/end years).
         if("start" in sec_data["items"][i])
         {
             var p = document.createElement("p");
@@ -38,6 +40,7 @@ function make_section(sec_data, sec_div)
             dt.appendChild(p);
         }
 
+        // Name of the items (e.g. school name)
         if("name" in sec_data["items"][i])
         {
             var p = document.createElement("p");
@@ -49,9 +52,10 @@ function make_section(sec_data, sec_div)
 
         var dd = document.createElement("dd");
         dd.classList.add("col-sm-9");
+        dd.classList.add("section-data");
 
 
-
+        // Handles school items
         if ("school" in sec_data["items"][i])
         {
             var div_academic = document.createElement("div");
@@ -62,9 +66,10 @@ function make_section(sec_data, sec_div)
 
             var p = document.createElement("p");
             p.classList.add("item-school");
-            p.innerHTML = sec_data["items"][i]["school"];
+            p.innerHTML = sec_data["items"][i]["school"]; // school name
             div_school.appendChild(p);
 
+            // Add country tag, if needed
             if ("country" in sec_data["items"][i])
             {
                 var p = document.createElement("p");
@@ -123,6 +128,7 @@ function make_section(sec_data, sec_div)
                 dd.appendChild(p);
             }
 
+        // Append list description header (dt) and description (dd)
         dl.appendChild(dt);
         dl.appendChild(dd);
     }
@@ -147,6 +153,7 @@ function make_all_sections(data)
         sec_div.id = sec;
         make_section(data["sections"][sec], sec_div);
         content.appendChild(sec_div);
+        content.appendChild(document.createElement("hr"));
     }
 }
 

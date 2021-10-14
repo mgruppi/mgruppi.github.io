@@ -14,6 +14,7 @@
 
   "sections": {
     "sec-education": {
+      "order": -10,
       "name": "Education",
       "items": [
       {
@@ -38,6 +39,7 @@
       {
         "name": "BSc in Computer Science",
         "school": "Federal University of Viçosa",
+        "country": "Brazil",
         "start": "2009",
         "end": "2014"
       },
@@ -51,6 +53,7 @@
       }
     ]},
     "sec-research": {
+        "order": -9,
         "name": "Research",
         "items": [
         {
@@ -88,6 +91,7 @@
       ]
     },
     "sec-teaching":{
+      "order": 0,
       "name": "Teaching",
       "items": [
       {
@@ -99,7 +103,7 @@
         "end": "2019"
       },
       {
-        "name": "Lecturer of Computer Science",
+        "name": "Lecturer (Computer Science)",
         "school": "Federal University of Viçosa",
         "country": "Brazil",
         "description": "Taught programming courses to undergraduate students (C++ and Python).",
@@ -110,17 +114,19 @@
         "name": "Teaching Assistant in Computer Science",
         "school": "Federal University of Viçosa",
         "country": "Brazil",
-        "description": "Provided assitance to Programming Lab sessions.",
+        "description": "Provided assistance to Programming Lab sessions.",
         "start": "2014",
         "end": "2015"
       }
     ]},
-    "sec-work":{ "name": "Work", "items": [
+    "sec-work":{
+      "order": 0,
+      "name": "Work", "items": [
       {
         "name": "Frontend Developer",
         "school": "Rensselaer Polytechnic Institute",
         "country": "Brazil",
-        "description": "Worked developing the interface for MetPetDB at RPI over the summer of 2019 (HTML, Javascript and Python).",
+        "description": "Worked as front-end developer for the MetPetDB project at RPI over the summer of 2019 (HTML, Javascript and Python).",
         "start": "2019",
         "end": "2019"
       },
@@ -133,14 +139,29 @@
         "end": "2015"
       }
     ]},
-    "sec-skills": {"name": "Skills & Abilities", "items":[
+    "sec-skills": {
+      "order": 0,
+      "name": "Skills & Abilities",
+      "items":[
       {
         "name": "Programming Languages",
         "description": "Python, C++, C, HTML, Javascript, Java, Visual Basic"
       },
       {
-        "name": "Other Skills",
-        "description": "Machine Learning, Deep Learning and Natural Language Processing packages in Python (SciKit learn, Tensorflow/PyTorch, NLTK/SpaCy), Parallel Computing (CUDA, OpenMP)"
+        "name": "Machine Learning",
+        "description": "Toolkits in Python: Scikit-learn, PyTorch, Tensorflow, SpaCy, NLTK."
+      },
+      {
+        "name": "Font-end development",
+        "description": "HTML5, Bootstrap, JQuery."
+      },
+      {
+        "name": "Back-end development",
+        "description": "Python: Flask, Django-Rest API. Databases: Postgres, SQLite, SQL Server."
+      },
+      {
+        "name": "Other skills",
+        "description": "Parallel Computing (CUDA and OpenMP)"
       }
     ]},
     "sec-awards": {"name": "Awards", "items":[

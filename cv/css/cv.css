@@ -1,9 +1,15 @@
 
 p{
-    margin: 1px;
+    margin: 0px;
+
 }
 
 .section-title{
+
+}
+
+.section-data{
+
 }
 
 .item-years{
@@ -26,5 +32,10 @@ p{
 }
 
 .description-field{
-    margin-bottom: 1px;
+    margin-bottom: 0px;
+}
+
+.cv-header{
+    margin-bottom: 8px;
+    font-size: 18pt;
 }
