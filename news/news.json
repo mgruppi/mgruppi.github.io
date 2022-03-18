@@ -1,5 +1,11 @@
 [
-  {
+  {"date": "2022-03-12",
+   "text": "The newest version of the NELA-GT dataset has been released. This is a dataset of news articles designed for the study of news credibility. It contains news articles from hundreds of sources. Sources are labeled according to a reliability score.",
+   "links":{
+    "Dataset": "https://github.com/MELALab/nela-gt"
+   }  
+  },
+ {
     "date": "2021-09-09",
     "text": "We have released SenSE, a system for Semantic Shift Exploration and Visualization. Check it out <a href='https://sense.mgruppi.me'>here</a>.",
     "links": {
