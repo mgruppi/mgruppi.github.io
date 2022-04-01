@@ -54,8 +54,8 @@
 </template>
 
 <script setup>
-import * as news from '../assets/news.js'
-news.readNews;
+import news from "../assets/news.js"
+news.readNews();
 
 </script>
 

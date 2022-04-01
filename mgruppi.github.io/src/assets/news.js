@@ -1,4 +1,5 @@
-function makeNewsItem(data)
+var news = {
+makeNewsItem(data)
 {
     // Creates an entry to the news feed.
     var li = document.createElement("li");
@@ -27,7 +28,7 @@ function makeNewsItem(data)
         links.classList.add("border-0");
         links.classList.add("news-links");
 
-        for (l in data["links"])
+        for (var l in data["links"])
         {
             var li_link = document.createElement("li");
             li_link.classList.add("list-group-item");
@@ -54,20 +55,20 @@ function makeNewsItem(data)
     li.classList.add("bg-dark");
 
     return li;
-}
+},
 
-function displayNews(data)
+displayNews(data)
 {
     // Given a JSON list of articles, display them at the desired location.
     var ul = document.getElementById("news-list");
-    for (d in data)
+    for (var d in data)
     {
-        li = makeNewsItem(data[d]);
+        li = this.makeNewsItem(data[d]);
         ul.appendChild(li);
     }
-}
+},
 
-function readNews()
+readNews()
 {
     const http = new XMLHttpRequest();
     const url = "https://mgruppi.github.io/news/news.json";
@@ -77,7 +78,10 @@ function readNews()
 
     http.onreadystatechange=(e)=>{
         var r = http.response;
-        displayNews(r);
+        this.displayNews(r);
     };
 }
 
+}
+
+export default news
