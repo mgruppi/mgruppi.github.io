@@ -9,7 +9,7 @@ export default({
 
 <template>
     <div>
-        <router-view class="container">
+        <router-view class="container p-0">
         </router-view>
     </div>
 

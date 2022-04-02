@@ -14,7 +14,7 @@ import 'vue-router'
 
 <template>
 
-<div class="bg-dark text-light">
+<div>
   <header>
     <Navbar />
   </header> 
