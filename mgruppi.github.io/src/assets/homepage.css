@@ -97,3 +97,11 @@ a:visited{
 .social-link{
     margin: 4px;
 }
+
+a {
+    transition: color 0.2s;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--color6);
+}

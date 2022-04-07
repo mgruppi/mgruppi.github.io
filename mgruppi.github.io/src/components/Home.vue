@@ -30,7 +30,7 @@ export default({
             <div class="col-sm-0 col-md-3 m-0 px-0">
                 <div class="card bg-dark mb-0">
                     <div class="card-body d-flex flex-column align-items-center">
-                        <img :src="'./me.jpg'" style="width: 150px; margin-bottom: 4px; border-style: solid; border-width: 2px;">
+                        <img :src="'./me.jpg'" class="rounded-circle" style="width: 150px; margin-bottom: 4px; border-style: solid; border-width: 2px;">
                     </div>
                     <p class="text-center" style="font-weight:bold; font-size:16pt; margin-bottom: 2px;">
                         Maurício Gruppi
@@ -62,3 +62,9 @@ export default({
         </div>
     </div>
 </template>
+
+<style scoped>
+a:hover{
+    color: var(--color6);
+}
+</style>

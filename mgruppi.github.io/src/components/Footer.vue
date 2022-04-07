@@ -1,7 +1,9 @@
+<script>
+</script>
 <template>
     <div>
     <div class="d-flex justify-content-center">
-        <ul class="nav m-0">
+        <ul class="nav m-0 gap-2">
             <li class="social-link">
                 <a href="https://twitter.com/GruppiMauricio" target="_blank" style="color: white;"><i class="fab fa-twitter fa-3x"></i></a>
             </li>
@@ -15,3 +17,7 @@
     </div>
   </div>
 </template>
+
+<style scoped>
+
+</style>
