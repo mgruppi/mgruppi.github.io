@@ -27,7 +27,7 @@ export default {
         return {
             game: {
                 selected: new Set(),
-                turn_count: 1,
+                turn_count: 0,
                 matches: 0,
             },
             cards: [
@@ -173,10 +173,10 @@ export default {
 <template>
     <div class>
         <h1>Memória</h1>
-        <h3>Turno: <span id="turnCountText" class="displayCounter"> {{ this.game.turn_count }}</span> | Corretos: <span>{{ this.game.matches }}</span></h3>
+        <h3>Turnos: <span id="turnCountText" class="displayCounter"> {{ this.game.turn_count }}</span> | Corretos: <span>{{ this.game.matches }}</span></h3>
         <div class="position-relative">
             <div class="game-grid d-flex flex-wrap gap-3 mb-4 position-relative">
-                <div v-for="(item, position) in this.items" :key="item" class="" @click="revealItem(item, position)">
+                <div v-for="(item, position) in this.items" :key="item" class="goto-position" :style="{'animation-delay': 200*position+'ms'}" @click="revealItem(item, position)">
                         <div :class="{'pointer-disabled': item.locked}" class="flip-card shadow-sm user-select-none">
                             <div class="flip-card-inner">
                             <Transition name="flip">
@@ -340,6 +340,29 @@ export default {
         transform: rotateY(0);
     }
 }
+
+.goto-position{
+    transform: translate(-120vw, 50vh);
+    animation-name: goto;
+    animation-timing-function: ease-out;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes goto {
+    0% {
+        transform: translate(-120vw, 50vh);
+    }
+
+    90% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
 
 .bouncy {
     animation-name: pulse;
