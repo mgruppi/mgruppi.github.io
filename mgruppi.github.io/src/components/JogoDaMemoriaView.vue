@@ -11,7 +11,9 @@ export default {
 </script>
 
 <template>
-    <JogoDaMemoria />
+    <div class="container">
+        <JogoDaMemoria />
+    </div>
 </template>
 
 <style scoped>

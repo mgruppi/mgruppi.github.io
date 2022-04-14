@@ -1,5 +1,6 @@
 <script>
 import AnimationGroup from '../components/AnimationGroup.vue'
+import IconCatPaw from '../components/icons/IconCatPaw.vue'
 
 function shuffle(array) {
   let currentIndex = array.length,  randomIndex;
@@ -22,6 +23,10 @@ function shuffle(array) {
 export default {
     setup() {
         
+    },
+    components: {
+        AnimationGroup: AnimationGroup,
+        IconCatPaw: IconCatPaw
     },
     data() {
         return {
@@ -69,9 +74,6 @@ export default {
     },
     created() {
         this.initBoard();
-    },
-    components: {
-        AnimationGroup: AnimationGroup
     },
     methods: {
         initBoard() {
@@ -171,13 +173,13 @@ export default {
 </script>
 
 <template>
-    <div class>
+    <div class="container-fluid m-0 p-0">
         <h1>Memória</h1>
-        <h3>Turnos: <span id="turnCountText" class="displayCounter"> {{ this.game.turn_count }}</span> | Corretos: <span>{{ this.game.matches }}</span></h3>
+        <h3>Turnos: <span id="turnCountText" class="displayCounter"> {{ this.game.turn_count }}</span> | <span><IconCatPaw v-for="i in this.game.matches" :key="i" /></span></h3>
         <div class="position-relative">
-            <div class="game-grid d-flex flex-wrap gap-3 mb-4 position-relative">
-                <div v-for="(item, position) in this.items" :key="item" class="goto-position" :style="{'animation-delay': 200*position+'ms'}" @click="revealItem(item, position)">
-                        <div :class="{'pointer-disabled': item.locked}" class="flip-card shadow-sm user-select-none">
+            <div class="container game-grid d-flex justify-content-center flex-wrap gap-1 mb-4 p-0 position-relative">
+                <div v-for="(item, position) in this.items" :key="item" class="grid-item" @click="revealItem(item, position)">
+                        <div :class="{'pointer-disabled': item.locked}" class="goto-position flip-card shadow-sm user-select-none" :style="{'animation-delay': 200*position+'ms'}">
                             <div class="flip-card-inner">
                             <Transition name="flip">
                                 <div v-if="item.reveal" class="card-front" :class="{ bouncy: item.correct }">
@@ -194,7 +196,8 @@ export default {
                         </div>
                 </div>
                 <div class="popup" id="popupPanel">
-                    <AnimationGroup :duration="'1.5s'" :animation="'bounce-in'" :text="'ACERTOU!'"/>
+                    <!-- <AnimationGroup :duration="'1.5s'" :animation="'bounce-in'" :text="'ACERTOU!'"/> -->
+                    <IconCatPaw class='drop-in' style='display: inline-block'/>
                 </div>
                 <div class="popup" id="popupVenceu" style="color: coral;">
                     <AnimationGroup :duration="'2s'" :animation="'snake'" :text="'FIM DE JOGO'" />
@@ -207,7 +210,13 @@ export default {
 <style scoped>
 
 .game-grid {
-    width: 900px;
+    position: relative;
+    max-width: 900px;
+}
+
+.grid-item {
+    flex: 1 0 21%;
+    aspect-ratio: 1;
 }
 
 .displayCounter {
@@ -229,6 +238,34 @@ export default {
     user-select: none;
 }
 
+.drop-in {
+    animation-name: dropin;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes dropin{
+    0% {
+        transform: translate(-50vw, -100vh);
+    }
+    20% {
+        transform: translate(-25vw, -80vh);
+    }
+
+    60% {
+        transform: translate(-2%, 15%) rotate(360deg) scale(1.1, 0.75);
+    }
+
+    80% {
+        transform: translate(0) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(0) rotate(360deg);
+    }
+}
+
 .pointer-disabled {
     pointer-events: none;
 }
@@ -236,13 +273,11 @@ export default {
 .flip-card{
   background-color: transparent;
   border-radius: 8px;
-  width: 200px;
-  height: 200px;
-  max-width: 200px;
-  max-height: 200px;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; /* For 3d effect */
   transition: transform 0.2s;
 }
 
@@ -282,14 +317,10 @@ export default {
     background: black;
 }
 
-.grid-item {
-    max-width: 25%;
-}
-
 .flip-card img{
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    height: 100%;
     max-width: 100%;
     max-height: 100%;
     border-radius: inherit;
