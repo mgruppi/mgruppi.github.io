@@ -5,6 +5,9 @@
   --color4: #dd5182;
   --color5: #ff6e54;
   --color6: #ffa600;
+  --primary: #6707E4;
+  --secondary: #D607E4;
+  --primary-text: #A46AEF;
 }
 
 ::-webkit-scrollbar{
@@ -49,7 +52,7 @@ a:link {
 }
 
 a:visited{
-    color: #456ff7;
+    color: var(--primary-text);
 }
 
 .list-quick-links {
@@ -104,4 +107,9 @@ a {
 }
 a:hover{
     color: var(--color6);
+}
+
+.btn-primary, .btn-primary:hover {
+    background-color: var(--primary);
+    border-color: var(--primary);
 }
