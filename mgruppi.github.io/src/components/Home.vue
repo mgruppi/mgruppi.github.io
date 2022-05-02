@@ -16,7 +16,7 @@ export default({
 
 <!--                    MIDDLE COLUMN-->
             <div class="col-md-9 m-0 mb-2 px-0 pr-2">
-                <div id="news-feed" class="card bg-dark news-feed-container">
+                <div id="news-feed" class="card bg-dark news-feed-container pb-2">
                     <div class="card-header">
                         <h2> News </h2>
                     </div>
