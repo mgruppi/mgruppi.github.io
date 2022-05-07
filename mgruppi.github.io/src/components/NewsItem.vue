@@ -15,7 +15,7 @@ export default {
         </p>
         <ul class="list-group list-group-horizontal border-0 news-links">
             <li class="list-group-item bg-dark py-0 px-1 border-0" v-for="(value, key) in newsitem.links" :key="key">
-                <a class="btn btn-sm btn-primary" :href="value">{{key}}</a>
+                <a class="btn badge bgPrimary" :href="value">{{key}}</a>
             </li>
         </ul>
     </li>

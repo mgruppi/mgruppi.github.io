@@ -50,10 +50,10 @@ export default({
                     <div class="card-body">
                         <div class="container">
                             <ul class="list-group list-group-flush list-quick-links">
-                                <li class="list-group-item bg-dark"><a href="https://twitter.com/GruppiMauricio" target="_blank"><i class="fab fa-twitter"></i>Twitter</a></li>
-                                <li class="list-group-item bg-dark"><a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ" target="_blank"><i class="fas fa-graduation-cap"></i>Google Scholar</a></li>
-                                <li class="list-group-item bg-dark"><a href="https://github.com/mgruppi" target="_blank"><i class="fab fa-github"></i>GitHub</a></li>
-                                <li class="list-group-item bg-dark"><a href="https://melalab.github.io/index.html" target="_blank"><span><i><img :src="'./mela-logo.png'" width="16" height="16"></i></span>MeLa Lab</a></li>
+                                <li class="list-group-item bg-dark"><a href="https://twitter.com/GruppiMauricio"><i class="fab fa-twitter"></i>Twitter</a></li>
+                                <li class="list-group-item bg-dark"><a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><i class="fas fa-graduation-cap"></i>Google Scholar</a></li>
+                                <li class="list-group-item bg-dark"><a href="https://github.com/mgruppi"><i class="fab fa-github"></i>GitHub</a></li>
+                                <li class="list-group-item bg-dark"><a href="https://melalab.github.io/index.html"><span><i><img :src="'./mela-logo.png'" width="16" height="16"></i></span>MeLa Lab</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +64,5 @@ export default({
 </template>
 
 <style scoped>
-a:hover{
-    color: var(--color6);
-}
+
 </style>

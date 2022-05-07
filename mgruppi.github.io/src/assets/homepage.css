@@ -5,8 +5,9 @@
   --color4: #dd5182;
   --color5: #ff6e54;
   --color6: #ffa600;
-  --primary: #6707E4;
-  --secondary: #D607E4;
+  --primary: #5A9F4D;
+  --secondary: #694D9F;
+  --tertiary: #9F4D83;
   --primary-text: #A46AEF;
 }
 
@@ -48,7 +49,7 @@ p.news{
 }
 
 a:link {
-    color: #dba204;
+    color: var(--primary);
 }
 
 a:visited{
@@ -106,10 +107,14 @@ a {
     text-decoration: none;
 }
 a:hover{
-    color: var(--color6);
+    color: var(--secondary);
 }
 
 .btn-primary, .btn-primary:hover {
     background-color: var(--primary);
     border-color: var(--primary);
+}
+
+.bgPrimary {
+    background-color: var(--primary);
 }
