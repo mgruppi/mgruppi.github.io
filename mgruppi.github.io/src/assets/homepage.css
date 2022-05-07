@@ -14,9 +14,6 @@
 ::-webkit-scrollbar{
     width: 4px;
 }
-/* Track */
-::-webkit-scrollbar-track {
-}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
@@ -90,9 +87,6 @@ a:visited{
     color: #FAFAFA;
 }
 
-.news-feed-container{
-}
-
 .news-feed{
     max-height: 800px;
     overflow: auto;
@@ -117,4 +111,13 @@ a:hover{
 
 .bgPrimary {
     background-color: var(--primary);
+}
+
+.profile-image img{
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: var(--primary);
+    border-radius: 50%;
 }
