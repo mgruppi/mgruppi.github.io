@@ -12,7 +12,7 @@ export default({
             school: 'Rensselaer Polytechnic Institute',
 
             keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Language Representation",
-                        "Word Embeddings", "Disinformation", "Information Trust"]
+                        "Word Embedding", "Disinformation", "Information Trust"]
         }
     },
     components: { NewsFeed: NewsFeed }
@@ -57,12 +57,16 @@ export default({
                     </div>
                 </div>
 
-                <div id="news-feed" class="card bg-dark news-feed-container pb-2 mt-3">
-                    <div class="card-header">
-                        <h4> News </h4>
-                    </div>
-                    <div class="card-body news-feed">
-                        <NewsFeed />
+                <div class="row">
+                    <div class="col-12">
+                        <div id="news-feed" class="card bg-dark news-feed-container pb-2 mt-3">
+                            <div class="card-header py-0">
+                                <h4 class="m-0"> News </h4>
+                            </div>
+                            <div class="card-body news-feed">
+                                <NewsFeed />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

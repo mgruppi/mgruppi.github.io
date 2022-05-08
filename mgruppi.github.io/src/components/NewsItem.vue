@@ -13,8 +13,8 @@ export default {
         </p>
         <p class="news" id="field-text" v-html="newsitem.text">
         </p>
-        <ul class="list-group list-group-horizontal border-0 news-links">
-            <li class="list-group-item bg-dark py-0 px-1 border-0" v-for="(value, key) in newsitem.links" :key="key">
+        <ul class="list-group list-group-horizontal border-0 news-links gap-1">
+            <li class="list-group-item bg-dark py-0 px-0 border-0" v-for="(value, key) in newsitem.links" :key="key">
                 <a class="btn badge bgPrimary" :href="value">{{key}}</a>
             </li>
         </ul>
