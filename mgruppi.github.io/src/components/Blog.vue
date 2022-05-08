@@ -7,25 +7,36 @@ export default {
     components: {
         BlogEntry: BlogEntry
     },
+    created() {
+        this.getNewsData().then((data) => {
+            this.entries = data;
+        })  
+    },
     data() {
         return {
             entries: [
-                {
-                    date: '2022-01-01',
-                    title: 'Latest Entry',
-                    content: 'Lorem Ipsum...',
-                    author: 'Maurício',
-                },
-                {
-                    date: '2021-12-01',
-                    title: 'First Entry',
-                    content: 'Lorem Ipsum Lorem...',
-                    author: 'Maurício',
-                }
             ],
             selected: 0,
         }
     },
+    methods: {
+        async getNewsData() {
+            const response = await fetch("https://mgruppi.github.io/blog.json");
+            const data = await response.json();
+            return data;
+        }
+    },
+    computed: {
+        sortedEntries() {
+            if (this.entries) {
+                const sorted = [...this.entries].sort((a,b) => { return a.date > b.date ? -1 : 1 });
+                return sorted;
+            }
+            else {
+                return [];
+            }
+        }
+    }
 }
 </script>
 
@@ -36,7 +47,7 @@ export default {
         <!-- MIDDLE COL -->
         <div class="col-9">
             <div id="blogFeed" class="blog-feed">
-                <BlogEntry v-for="e in this.entries" :key="e" :entry="e" class="blog-entry"></BlogEntry>
+                <BlogEntry v-for="e in sortedEntries" :key="e" :entry="e" class="blog-entry"></BlogEntry>
             </div>
         </div>
 
@@ -45,7 +56,7 @@ export default {
             <div class="blog-archive">
                 <h5>Archive</h5>
                 <ul class="list-group">
-                    <li v-for="e in entries" :key="e" class="list-group-item list-group-item-dark"><div class="d-flex justify-content-between"><span>{{ e.title }}</span> <span>{{ e.date }}</span></div></li>
+                    <li v-for="e in sortedEntries" :key="e" class="list-group-item list-group-item-dark"><div class="d-flex justify-content-between"><span>{{ e.title }}</span> <span>{{ e.date }}</span></div></li>
                 </ul>
             </div>
         </div>

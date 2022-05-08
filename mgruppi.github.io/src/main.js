@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 import App from './App.vue'
 
 // Import components
@@ -21,6 +21,7 @@ const routes = [
 const router = createRouter({
     // 4. Provide the history implementation to use. We are using the hash history for simplicity here.
     history: createWebHashHistory(),
+    // history: createWebHistory(),  // use this if we want to avoid having the /#/<route> format
     routes, // short for `routes: routes`
 })
 
