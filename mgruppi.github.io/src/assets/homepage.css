@@ -121,3 +121,11 @@ a:hover{
     border-radius: 50%;
     border-color: #555;
 }
+
+.list-links a{
+    color: #F2F2F2;
+}
+
+.list-tags {
+    font-size: 1.1em;
+}

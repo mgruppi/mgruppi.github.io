@@ -41,7 +41,7 @@ export default({
                         </ul>
                     </div>
 
-                    <div class="col-sm-12 col-md-5 d-flex align-items-center">
+                    <div class="list-tags col-sm-12 col-md-5 d-flex align-items-center">
                         <ul class="list-inline">
                             <li class="list-inline-item" v-for="k in this.keywords" :key="k"><span class="badge rounded-pill bgPrimary"> {{ k }}</span></li>
                         </ul>
@@ -49,7 +49,7 @@ export default({
                 </div>
 
                 <div class="d-flex justify-content-center ">
-                    <div class="d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill bg-dark p-1">
+                    <div class="list-links d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill bg-dark p-1">
                         <a href="https://twitter.com/GruppiMauricio"><span class="d-flex flex-column align-items-center"><i class="fab fa-twitter h3 m-0"></i>Twitter</span></a>
                         <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><span class="d-flex flex-column align-items-center"><i class="fab fa-google h3 m-0"></i>Google Scholar</span></a>
                         <a href="https://github.com/mgruppi"><span class="d-flex flex-column align-items-center "><i class="fab fa-github h3 m-0"></i>GitHub</span></a>
