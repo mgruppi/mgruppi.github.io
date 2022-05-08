@@ -1,8 +1,8 @@
 [
     {
         "date": "2022-05-07",
-        "title": "Me bloging?",
-        "content": "I am trying to set up a blog. I believe I will not do it diligently. For the time being, I will leave some cat pics.",
+        "title": "Blog?",
+        "content": "I am trying to set up a blog. Behold, cat pics!",
         "author": "Maurício",
         "images": ["https://mgruppi.github.io/images/cafecito_wings.jpg", "https://mgruppi.github.io/images/cafecito_assistindo.jpg", 
                    "https://mgruppi.github.io/images/cafecito_largado.jpeg"]
