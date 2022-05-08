@@ -28,13 +28,13 @@ export default({
 <!--                    MIDDLE COLUMN-->
             <div class="colm-0 mb-2 px-0 pr-2">
                 <div class="row my-1">
-                    <div class="d-flex justify-content-center col-sm-12 col-md-2 position-relative profile-image">
+                    <div class="d-flex justify-content-center align-items-center col-sm-12 col-md-2 position-relative profile-image">
                         <img :src="'./me.jpg'">
                     </div>
 
                     <div class="col-sm-12 col-md-4">
                         <h1> {{ this.name }} </h1>
-                        <ul class="list-unstyled mx-1">
+                        <ul class="list-unstyled mx-1 m-0">
                             <li> {{ this.position }}</li>
                             <li> {{ this.field }}</li>
                             <li> {{ this.school }}</li>
@@ -48,7 +48,7 @@ export default({
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center ">
                     <div class="d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill bg-dark p-1">
                         <a href="https://twitter.com/GruppiMauricio"><span class="d-flex flex-column align-items-center"><i class="fab fa-twitter h3 m-0"></i>Twitter</span></a>
                         <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><span class="d-flex flex-column align-items-center"><i class="fab fa-google h3 m-0"></i>Google Scholar</span></a>
@@ -57,7 +57,7 @@ export default({
                     </div>
                 </div>
 
-                <div id="news-feed" class="card bg-dark news-feed-container pb-2 mt-2">
+                <div id="news-feed" class="card bg-dark news-feed-container pb-2 mt-3">
                     <div class="card-header">
                         <h4> News </h4>
                     </div>
