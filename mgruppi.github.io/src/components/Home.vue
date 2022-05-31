@@ -1,5 +1,6 @@
 <script>
 import NewsFeed from '../components/NewsFeed.vue'
+import profilePic from '../assets/img/me.jpg'
 export default({
     setup() {
         
@@ -20,7 +21,6 @@ export default({
 </script>
 
 
-
 <template>
     <div id="content-home" class="">
         <div class="row justify-content-md-center p-0 m-0">
@@ -29,7 +29,7 @@ export default({
             <div class="colm-0 mb-2 px-0 pr-2">
                 <div class="row my-1">
                     <div class="d-flex justify-content-center align-items-center col-sm-12 col-md-2 position-relative profile-image">
-                        <img :src="'./me.jpg'">
+                        <img :src="'/me.jpg'">
                     </div>
 
                     <div class="col-sm-12 col-md-4">
