@@ -48,8 +48,8 @@ export default({
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center ">
-                    <div class="list-links d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill bg-dark p-1">
+                <div class="d-flex justify-content-center">
+                    <div class="container-fluid list-links d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill bg-dark p-1">
                         <a href="https://github.com/mgruppi"><span class="d-flex flex-column align-items-center "><i class="fab fa-github h3 m-0"></i>GitHub</span></a>
                         <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><span class="d-flex flex-column align-items-center"><i class="fab fa-google h3 m-0"></i>Google Scholar</span></a>
                         <a href="https://twitter.com/GruppiMauricio"><span class="d-flex flex-column align-items-center"><i class="fab fa-twitter h3 m-0"></i>Twitter</span></a>
