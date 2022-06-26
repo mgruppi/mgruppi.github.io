@@ -23,6 +23,11 @@ export default({
 
 <template>
     <div id="content-home" class="">
+        <div class="alert alert-warning d-flex justify-content-center">
+            <h3>
+                <span><i class="fas fa-star"></i></span>
+                I am on the job market!</h3>
+        </div>
         <div class="row justify-content-md-center p-0 m-0">
 
 <!--                    MIDDLE COLUMN-->
@@ -57,9 +62,33 @@ export default({
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12">
-                        <div id="news-feed" class="card bg-dark news-feed-container pb-2 mt-3">
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="intro-pane bg-dark p-4">
+                        <p>I work on <b>methods</b> and <b>applications</b> of linguistic shift detection.</p>
+                        <p>
+                            The focus of my work is to model the linguistic differences that can be inferred from data, 
+                            and to leverage them to improve the predictions and domain adaptations of language models. 
+                            Such linguistic shifts are driven by contextual differences between sources across time and domain. 
+                        </p>
+                        <p>    
+                            Language intricacies and biases present in a source's data are carried over to the language models trained on them. 
+                            This allows us to train or <i>fine tune</i> language models on a source's data to expose the contextual correlations of word usage.
+                        </p>
+                        <p>
+                            I have developed a method to <a href='https://ojs.aaai.org/index.php/AAAI/article/download/17525/17332'><b>improve linguistic shift detection</b></a>, 
+                            have shown how these shifts can be <a href='https://www.aaai.org/AAAI22Papers/DEMO-00312-GruppiM.pdf'><b>explained</b></a> through contextual words and 
+                            in sentences, 
+                            and have discovered that semantic shift can be a <a href='https://arxiv.org/pdf/2205.07970'><b>strong indicator</b></a> of news source reliability.
+                        </p>
+                        <p>
+                            Much of my work is applied to <b>disinformation detection</b> (sometimes called "<i>fake news</i>") with the goal of exposing the linguistic differences between sources of misinformation 
+                            from reliable sources.    
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div id="news-feed" class="card bg-dark pb-2">
                             <div class="card-header py-0">
                                 <h4 class="m-0"> News </h4>
                             </div>
@@ -75,5 +104,8 @@ export default({
 </template>
 
 <style scoped>
+.intro-pane a {
+    color: var(--primary-text);
+}
 
 </style>
