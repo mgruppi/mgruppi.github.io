@@ -11,5 +11,16 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       vue: 'vue/dist/vue.esm-bundler.js'
     }
-  }
+  },
+  base: "",
+  server: {
+    proxy: {
+      "/articles": {
+        target: "https://mgruppi.me/archive/blog",
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/articles/, ""),
+      },
+    },
+  },
 })
