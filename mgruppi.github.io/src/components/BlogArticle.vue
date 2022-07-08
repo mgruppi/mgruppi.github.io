@@ -1,8 +1,8 @@
 <script>
-import { marked } from 'marked'
-import DOMPurify from 'dompurify'
-import hljs from 'highlight.js'
-import 'highlight.js/styles/base16/solar-flare.css'
+// import { marked } from 'marked'
+// import DOMPurify from 'dompurify'
+// import hljs from 'highlight.js'
+// import 'highlight.js/styles/base16/solar-flare.css'
 
 export default {
     setup() {

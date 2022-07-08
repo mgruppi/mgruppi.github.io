@@ -24,9 +24,13 @@ export default({
 <template>
     <div id="content-home" class="">
         <div class="alert alert-warning d-flex justify-content-center">
+            <span><i class="fas fa-star m-1"></i></span>
             <h3>
-                <span><i class="fas fa-star"></i></span>
-                I am on the job market!</h3>
+                I am on the job market!
+            </h3>
+            <h3>
+                <a href="mailto:mauricio.gruppi+job@gmail.com" style="color: var(--color2)">Contact</a> for openings!
+            </h3>
         </div>
         <div class="row justify-content-md-center p-0 m-0">
 
@@ -65,7 +69,7 @@ export default({
                 <div class="row mt-3">
                     <div class="col-sm-12 col-md-8">
                         <div class="intro-pane bg-dark p-4">
-                        <p>I work on <b>methods</b> and <b>applications</b> of linguistic shift detection.</p>
+                        <p>I work on Natural Language Processing <b>methods</b> and <b>applications</b> to linguistic shift detection.</p>
                         <p>
                             The focus of my work is to model the linguistic differences that can be inferred from data, 
                             and to leverage them to improve the predictions and domain adaptations of language models. 
