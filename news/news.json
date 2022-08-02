@@ -1,5 +1,12 @@
 [
   {
+    "date":"2020-08-02",
+    "text": "Our paper 'SciLander: Mapping the Scientific News Landscape' was accepted at ICWSM 2023!",
+    "links":{
+      "Pre-print": "https://arxiv.org/pdf/2205.07970.pdf"
+    }
+  },
+  {
     "date": "2022-05-02",
     "text": "I will be working as a research <i>extern</i> at <a href='https://research.ibm.com/labs/watson/'>IBM Thomas J. Watson Research Center </a> this summer."
   },
