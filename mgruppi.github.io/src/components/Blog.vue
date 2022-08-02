@@ -1,73 +1,69 @@
 <script>
-import BlogEntry from '../components/BlogEntry.vue'
+import BlogArticle from '../components/BlogArticle.vue'
+
 export default {
-    setup() {
-        
-    },
-    components: {
-        BlogEntry: BlogEntry
+    setup() {        
     },
     created() {
-        this.getNewsData().then((data) => {
-            this.entries = data;
-        })  
+        this.getArticles().then((data) => this.handleArticles(data));
     },
     data() {
         return {
-            entries: [
-            ],
-            selected: 0,
+            articles: [],
         }
     },
+    mounted() {
+
+    },
+    updated() {
+    },
+    components: {
+        BlogArticle
+    },
     methods: {
-        async getNewsData() {
-            const response = await fetch("https://mgruppi.github.io/blog.json");
+        async getArticles() {
+            const response = await fetch("/articles/");
             const data = await response.json();
             return data;
+        },
+
+        handleArticles(data) {
+            for(let i = 0; i < data.length; ++i)
+            {
+                        const a = {'data': data[i]}
+                        this.articles.push(a);
+            }
+        },
+
+        scrollTo(elementId) {
+            // Scroll to element in page 
+            // This is necessary if the app router uses WebHashHistory as #<elementId> will not work in that case
+            const top = document.getElementById(elementId).offsetTop;
+            window.scrollTo(0, top);
         }
     },
     computed: {
-        sortedEntries() {
-            if (this.entries) {
-                const sorted = [...this.entries].sort((a,b) => { return a.date > b.date ? -1 : 1 });
-                return sorted;
-            }
-            else {
-                return [];
-            }
+        sortedArticles() {
+            // data.sort((a, b) => { return a['mtime'] < b['mtime'] ? 1 : -1});  // Sort by date `mtime`
+            const sorted = [...this.articles].sort((a,b) => {return a['data']['mtime'] < b['data']['mtime'] ? 1 : -1});
+            return sorted;
         }
     }
 }
 </script>
 
 <template>
-    <div class="d-flex mt-4">
-        <!-- LEFT COL -->
-
-        <!-- MIDDLE COL -->
-        <div class="col-9">
-            <div id="blogFeed" class="blog-feed">
-                <BlogEntry v-for="e in sortedEntries" :key="e" :entry="e" class="blog-entry"></BlogEntry>
-            </div>
-        </div>
-
-        <!-- RIGHT COL -->
-        <div class="col-3">
-            <div class="blog-archive">
-                <h5>Archive</h5>
-                <ul class="list-group">
-                    <li v-for="e in sortedEntries" :key="e" class="list-group-item list-group-item-dark"><div class="d-flex justify-content-between"><span>{{ e.title }}</span> <span>{{ e.date }}</span></div></li>
-                </ul>
-            </div>
-        </div>
-
+    <div id="article-feed" class="p-2 mt-4">
+        <BlogArticle v-for="a in sortedArticles" :key="a['data']['mtime']" 
+                                                :filename="a['data']['name']"
+                     />
     </div>
+    
 </template>
 
 <style scoped>
-
-.blog-feed .blog-entry{
-    margin-bottom: 8%;
-}
+    html {
+        scroll-behavior: smooth;
+    }
 
 </style>

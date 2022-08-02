@@ -11,7 +11,7 @@
             <div class="">
 
                 <p class="">
-                I am a PhD Candidate at Rensselaer Polytechnic Institute (since 2017) under the advisorship of professor <a href="https://www.cs.rpi.edu/~sibel/www/index.html">Sibel Adalı</a>.
+                I am a PhD Candidate at Rensselaer Polytechnic Institute (joined in 2017) under the advisorship of professor <a href="https://www.cs.rpi.edu/~sibel/www/index.html">Sibel Adalı</a>.
                 My research interests include machine learning and natural language processing methods and applications,
                 particularly to misinformation, and semantic change and bias.
                 </p>

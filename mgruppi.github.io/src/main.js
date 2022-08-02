@@ -14,7 +14,6 @@ const routes = [
   { path: '/home', component: Home},
   { path: '/about', component: About },
   { path: '/memoria', component: JogoDaMemoriaView},
-  { path: '/blog/', component: Blog}
 ]
 
 // Create router
