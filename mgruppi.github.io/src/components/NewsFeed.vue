@@ -29,7 +29,7 @@ export default({
 
 <template>
     <div>
-        <ul class="list-group bg-dark" id="news-list">
+        <ul class="list-group" id="news-list">
             <template v-if="!news_items">
                 <div class="d-flex align-items-center justify-content-center">
                     <div class="spinner-grow text-white" role="status">

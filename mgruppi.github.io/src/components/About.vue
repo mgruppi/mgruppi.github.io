@@ -3,7 +3,7 @@
 
 <template>
     <div class="">
-        <div class="bg-dark px-4 py-2">
+        <div class="px-4 py-2">
             <div class="">
                 <h1> About me</h1>
             </div>
@@ -26,7 +26,7 @@
             <img :src="'./me.jpg'" style="width: 200px;">
 
             <p class="fst-italic fw-light">
-                Maurício in 2018, Curitiba, Brazil </p>
+                Maurício in 2018, Brazil </p>
             </div>
             </div>
         </div>

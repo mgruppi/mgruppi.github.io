@@ -58,18 +58,18 @@ export default({
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <div class="container-fluid list-links d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill bg-dark p-1">
+                    <div class="container-fluid list-links d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill p-1">
                         <a href="https://github.com/mgruppi"><span class="d-flex flex-column align-items-center "><i class="fab fa-github h3 m-0"></i>GitHub</span></a>
                         <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><span class="d-flex flex-column align-items-center"><i class="fab fa-google h3 m-0"></i>Google Scholar</span></a>
                         <a href="https://twitter.com/GruppiMauricio"><span class="d-flex flex-column align-items-center"><i class="fab fa-twitter h3 m-0"></i>Twitter</span></a>
-                        <a href=""><span class="d-flex flex-column align-items-center"><i class="fab fa-linkedin-in h3 m-0"></i>LinkedIn</span></a>
+                        <a href="https://www.linkedin.com/in/maur%C3%ADcio-gruppi-8760b362/"><span class="d-flex flex-column align-items-center"><i class="fab fa-linkedin-in h3 m-0"></i>LinkedIn</span></a>
                         <a href="https://melalab.github.io/index.html"><span class="d-flex flex-column align-items-center"><span class="mb-1"><i><img :src="'./mela-logo.png'" width="30" height="30"></i></span>MeLa Lab</span></a>
                     </div>
                 </div>
 
                 <div class="row mt-3">
                     <div class="col-sm-12 col-md-8">
-                        <div class="intro-pane bg-dark p-4">
+                        <div class="intro-pane p-4">
                         <p>I work on Natural Language Processing <b>methods</b> and <b>applications</b> to linguistic shift detection.</p>
                         <p>
                             The focus of my work is to model the linguistic differences that can be inferred from data, 
@@ -93,7 +93,7 @@ export default({
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-4">
-                        <div id="news-feed" class="card bg-dark pb-2">
+                        <div id="news-feed" class="card pb-2">
                             <div class="card-header py-0">
                                 <h4 class="m-0"> News </h4>
                             </div>
