@@ -6,7 +6,6 @@ import App from './App.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import JogoDaMemoriaView from './components/JogoDaMemoriaView.vue'
-import Blog from './components/Blog.vue'
 
 // Define the routes
 const routes = [

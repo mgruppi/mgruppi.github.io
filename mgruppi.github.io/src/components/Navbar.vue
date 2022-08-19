@@ -24,3 +24,23 @@ export default({
 
     </div>
 </template>
+
+<style scoped>
+.router-link-active {
+    background-color: var(--primary);
+    border-radius: 5%;
+}
+
+@media (prefers-color-scheme: dark){
+    a:focus{
+        color: var(--text-light);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    a:focus {
+        color: var(--text-dark);
+    }
+}
+
+</style>
