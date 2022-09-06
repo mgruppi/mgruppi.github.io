@@ -12,7 +12,7 @@ export default({
             field: 'Computer Science',
             school: 'Rensselaer Polytechnic Institute',
 
-            keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Language Representation",
+            keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Representation Learning",
                         "Word Embedding", "Disinformation", "Information Trust"]
         }
     },

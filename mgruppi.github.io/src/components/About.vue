@@ -26,7 +26,7 @@
             <img :src="'./me.jpg'" style="width: 200px;">
 
             <p class="fst-italic fw-light">
-                Maurício in 2018, Brazil </p>
+                2018 </p>
             </div>
             </div>
         </div>
