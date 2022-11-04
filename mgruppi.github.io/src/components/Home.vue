@@ -1,6 +1,6 @@
 <script>
 import NewsFeed from '../components/NewsFeed.vue'
-import profilePic from '../assets/img/me.jpg'
+
 export default({
     setup() {
         
@@ -13,35 +13,38 @@ export default({
             school: 'Rensselaer Polytechnic Institute',
 
             keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Representation Learning",
-                        "Word Embedding", "Disinformation", "Information Trust"]
+                        "Computational Sociolinguistics"]
         }
     },
-    components: { NewsFeed: NewsFeed }
+    components: { 
+                    NewsFeed: NewsFeed 
+                }
 })
 </script>
 
 
 <template>
     <div id="content-home" class="">
-        <div class="alert alert-warning d-flex justify-content-center">
-            <span><i class="fas fa-star m-1"></i></span>
-            <h3>
-                I am on the job market!
-            </h3>
-            <h3>
+        <div class="alert alert-warning d-flex justify-content-center p-1">
+            <h5>
+                <span><i class="fas fa-star m-0 p-0"></i></span>
+                I am on the job market open to academia and industry positions!
+                [<a href="mailto:mauricio.gruppi+job@gmail.com" style="color: var(--color2)">Contact</a>]
+            </h5>
+            <!-- <h5>
                 <a href="mailto:mauricio.gruppi+job@gmail.com" style="color: var(--color2)">Contact</a> for openings!
-            </h3>
+            </h5> -->
         </div>
         <div class="row justify-content-md-center p-0 m-0">
 
 <!--                    MIDDLE COLUMN-->
-            <div class="colm-0 mb-2 px-0 pr-2">
+            <div class="col m-0 mb-2 px-0 pr-2">
                 <div class="row my-1">
                     <div class="d-flex justify-content-center align-items-center col-sm-12 col-md-2 position-relative profile-image">
                         <img :src="'/me.jpg'">
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-5">
                         <h1> {{ this.name }} </h1>
                         <ul class="list-unstyled mx-1 m-0">
                             <li> {{ this.position }}</li>
@@ -72,7 +75,7 @@ export default({
                         <div class="intro-pane p-4">
                         <p>I work on Natural Language Processing <b>methods</b> and <b>applications</b> to linguistic shift detection.</p>
                         <p>
-                            The focus of my work is to model the linguistic differences that can be inferred from data, 
+                            The focus of my research is to model the linguistic differences that can be inferred from data, 
                             and to leverage them to improve the predictions and domain adaptations of language models. 
                             Such linguistic shifts are driven by contextual differences between sources across time and domain. 
                         </p>
@@ -87,7 +90,7 @@ export default({
                             and have discovered that semantic shift can be a <a href='https://arxiv.org/pdf/2205.07970'><b>strong indicator</b></a> of news source reliability.
                         </p>
                         <p>
-                            Much of my work is applied to <b>disinformation detection</b> (sometimes called "<i>fake news</i>") with the goal of exposing the linguistic differences between sources of misinformation 
+                            Much of my work is applied to <b>misinformation detection</b> (sometimes called "<i>fake news</i>") with the goal of exposing the linguistic differences between sources of misinformation 
                             from reliable sources.    
                         </p>
                         </div>
@@ -102,6 +105,7 @@ export default({
                             </div>
                         </div>
                     </div>
+                
                 </div>
             </div>
         </div>
