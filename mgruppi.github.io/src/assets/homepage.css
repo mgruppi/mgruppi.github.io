@@ -9,6 +9,8 @@
   --secondary: #694D9F;
   --tertiary: #9F4D83;
   --primary-text: #A46AEF;
+  --text-light: #F2F2F2;
+  --text-dark: #272727;
 }
 
 ::-webkit-scrollbar{
@@ -25,22 +27,15 @@
   background: #555;
 }
 
-
-body{
-  background-color: #1d1e22;
-  color: #f2f2f2;
-  font-size: 16px;
-}
-
 p.date{
-    font-size: 16px;
+    /* font-size: 12pt; */
     color: #C2C2C2;
     margin-bottom: 8px;
     font-weight: bold;
 }
 
 p.news{
-    font-size: 16px;
+    /* font-size: 12pt; */
     color: #F2F2F2;
     margin-bottom: 0px;
 }
@@ -72,23 +67,19 @@ a:visited{
   background-color: #444e86;
 }
 
-.content-page p{
-    font-size: 16px;
-}
-
 .news-links{
-    font-size: 16px;
+    /* font-size: 16px; */
     color: #F2F2F2;
     margin-bottom: 0px;
 }
 
 .news-links a{
-    font-size: 14px;
+    /* font-size: 14px; */
     color: #FAFAFA;
 }
 
 .news-feed{
-    max-height: 800px;
+    max-height: 600px;
     overflow: auto;
 }
 
@@ -97,11 +88,12 @@ a:visited{
 }
 
 a {
-    transition: color 0.2s;
+    transition: 0.2s;
     text-decoration: none;
 }
+
 a:hover{
-    color: var(--secondary);
+    opacity: 0.5;
 }
 
 .btn-primary, .btn-primary:hover {
@@ -128,4 +120,71 @@ a:hover{
 
 .list-tags {
     font-size: 1.1em;
+}
+
+@media (prefers-color-scheme: dark){
+    body{
+    background-color: #1d1e22;
+    color: #f2f2f2;
+    font-size: 14pt;
+    }
+
+    #news-feed{
+        background-color: #2e3036;
+    }
+
+    .news-item{
+        background-color: #2e3036
+    }
+    .news-item-link{
+        background-color: rgba(0,0,0,0);
+    }
+
+    .navbar a {
+        color: var(--text-light);
+    }
+    .navbar a:hover {
+        color: var(--text-light);
+    }
+}
+
+@media (prefers-color-scheme: light){
+    body{
+    background-color: #f2f2f2;
+    color: #1d1e22;
+    font-size: 14pt;
+    }
+    p.date{
+        /* font-size: 12pt; */
+        color: #414141;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    p.news{
+        /* font-size: 12pt; */
+        color: #272727;
+        margin-bottom: 0px;
+    }
+    .list-quick-links a:link{
+        color: #272727;
+    }
+    .news-links{
+        /* font-size: 16px; */
+        color: #272727;
+        margin-bottom: 0px;
+    }
+    
+    .news-links a{
+        /* font-size: 14px; */
+        color: #272727;
+    }
+    .list-links a{
+        color: #272727;
+    }
+    .navbar a {
+        color: var(--text-dark);
+    }
+    .navbar a:hover {
+        color: var(--text-dark);
+    }
 }

@@ -6,7 +6,6 @@ import App from './App.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
 import JogoDaMemoriaView from './components/JogoDaMemoriaView.vue'
-import Blog from './components/Blog.vue'
 
 // Define the routes
 const routes = [
@@ -14,7 +13,6 @@ const routes = [
   { path: '/home', component: Home},
   { path: '/about', component: About },
   { path: '/memoria', component: JogoDaMemoriaView},
-  { path: '/blog/', component: Blog}
 ]
 
 // Create router

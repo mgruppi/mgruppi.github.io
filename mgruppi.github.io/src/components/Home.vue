@@ -1,5 +1,6 @@
 <script>
 import NewsFeed from '../components/NewsFeed.vue'
+
 export default({
     setup() {
         
@@ -11,28 +12,39 @@ export default({
             field: 'Computer Science',
             school: 'Rensselaer Polytechnic Institute',
 
-            keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Language Representation",
-                        "Word Embedding", "Disinformation", "Information Trust"]
+            keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Representation Learning",
+                        "Computational Sociolinguistics"]
         }
     },
-    components: { NewsFeed: NewsFeed }
+    components: { 
+                    NewsFeed: NewsFeed 
+                }
 })
 </script>
 
 
-
 <template>
     <div id="content-home" class="">
+        <div class="alert alert-warning d-flex justify-content-center p-1">
+            <h5>
+                <span><i class="fas fa-star m-0 p-0"></i></span>
+                I am on the job market open to academia and industry positions!
+                [<a href="mailto:mauricio.gruppi+job@gmail.com" style="color: var(--color2)">Contact</a>]
+            </h5>
+            <!-- <h5>
+                <a href="mailto:mauricio.gruppi+job@gmail.com" style="color: var(--color2)">Contact</a> for openings!
+            </h5> -->
+        </div>
         <div class="row justify-content-md-center p-0 m-0">
 
 <!--                    MIDDLE COLUMN-->
-            <div class="colm-0 mb-2 px-0 pr-2">
+            <div class="col m-0 mb-2 px-0 pr-2">
                 <div class="row my-1">
                     <div class="d-flex justify-content-center align-items-center col-sm-12 col-md-2 position-relative profile-image">
-                        <img :src="'./me.jpg'">
+                        <img :src="'/me.jpg'">
                     </div>
 
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-sm-12 col-md-5">
                         <h1> {{ this.name }} </h1>
                         <ul class="list-unstyled mx-1 m-0">
                             <li> {{ this.position }}</li>
@@ -48,18 +60,43 @@ export default({
                     </div>
                 </div>
 
-                <div class="d-flex justify-content-center ">
-                    <div class="list-links d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill bg-dark p-1">
-                        <a href="https://twitter.com/GruppiMauricio"><span class="d-flex flex-column align-items-center"><i class="fab fa-twitter h3 m-0"></i>Twitter</span></a>
-                        <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><span class="d-flex flex-column align-items-center"><i class="fab fa-google h3 m-0"></i>Google Scholar</span></a>
+                <div class="d-flex justify-content-center">
+                    <div class="container-fluid list-links d-flex col-md-6 justify-content-evenly flex-wrap rounded-pill p-1">
                         <a href="https://github.com/mgruppi"><span class="d-flex flex-column align-items-center "><i class="fab fa-github h3 m-0"></i>GitHub</span></a>
+                        <a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><span class="d-flex flex-column align-items-center"><i class="fab fa-google h3 m-0"></i>Google Scholar</span></a>
+                        <a href="https://twitter.com/GruppiMauricio"><span class="d-flex flex-column align-items-center"><i class="fab fa-twitter h3 m-0"></i>Twitter</span></a>
+                        <a href="https://www.linkedin.com/in/maur%C3%ADcio-gruppi-8760b362/"><span class="d-flex flex-column align-items-center"><i class="fab fa-linkedin-in h3 m-0"></i>LinkedIn</span></a>
                         <a href="https://melalab.github.io/index.html"><span class="d-flex flex-column align-items-center"><span class="mb-1"><i><img :src="'./mela-logo.png'" width="30" height="30"></i></span>MeLa Lab</span></a>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-12">
-                        <div id="news-feed" class="card bg-dark news-feed-container pb-2 mt-3">
+                <div class="row mt-3">
+                    <div class="col-sm-12 col-md-8">
+                        <div class="intro-pane p-4">
+                        <p>I work on Natural Language Processing <b>methods</b> and <b>applications</b> to linguistic shift detection.</p>
+                        <p>
+                            The focus of my research is to model the linguistic differences that can be inferred from data, 
+                            and to leverage them to improve the predictions and domain adaptations of language models. 
+                            Such linguistic shifts are driven by contextual differences between sources across time and domain. 
+                        </p>
+                        <p>    
+                            Language intricacies and biases present in a source's data are carried over to the language models trained on them. 
+                            This allows us to train or <i>fine tune</i> language models on a source's data to expose the contextual correlations of word usage.
+                        </p>
+                        <p>
+                            I have developed a method to <a href='https://ojs.aaai.org/index.php/AAAI/article/download/17525/17332'><b>improve linguistic shift detection</b></a>, 
+                            have shown how these shifts can be <a href='https://www.aaai.org/AAAI22Papers/DEMO-00312-GruppiM.pdf'><b>explained</b></a> through contextual words and 
+                            in sentences, 
+                            and have discovered that semantic shift can be a <a href='https://arxiv.org/pdf/2205.07970'><b>strong indicator</b></a> of news source reliability.
+                        </p>
+                        <p>
+                            Much of my work is applied to <b>misinformation detection</b> (sometimes called "<i>fake news</i>") with the goal of exposing the linguistic differences between sources of misinformation 
+                            from reliable sources.    
+                        </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <div id="news-feed" class="card pb-2">
                             <div class="card-header py-0">
                                 <h4 class="m-0"> News </h4>
                             </div>
@@ -68,46 +105,16 @@ export default({
                             </div>
                         </div>
                     </div>
+                
                 </div>
             </div>
-
-<!--                    RIGHT COLUMN-->
-            <!-- <div class="col-sm-0 col-md-3 m-0 px-0">
-                <div class="card bg-dark mb-0">
-                    <div class="card-body d-flex flex-column align-items-center">
-                        <img :src="'./me.jpg'" class="rounded-circle" style="width: 150px; margin-bottom: 4px; border-style: solid; border-width: 2px;">
-                    </div>
-                    <p class="text-center" style="font-weight:bold; font-size:16pt; margin-bottom: 2px;">
-                        Maurício Gruppi
-                    </p>
-                    <p class="text-center">
-                            PhD Candidate <br/>
-                            Computer Science <br/>
-                            Rensselaer Polytechnic Institute
-                    </p>
-                        <div class="card-footer">
-                        </div>
-                </div>
-                <div class="card bg-dark">
-                    <div class="card-header">
-                        <h5> Links </h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="container">
-                            <ul class="list-group list-group-flush list-quick-links">
-                                <li class="list-group-item bg-dark"><a href="https://twitter.com/GruppiMauricio"><i class="fab fa-twitter"></i>Twitter</a></li>
-                                <li class="list-group-item bg-dark"><a href="https://scholar.google.com/citations?user=MHHYhXwAAAAJ"><i class="fas fa-graduation-cap"></i>Google Scholar</a></li>
-                                <li class="list-group-item bg-dark"><a href="https://github.com/mgruppi"><i class="fab fa-github"></i>GitHub</a></li>
-                                <li class="list-group-item bg-dark"><a href="https://melalab.github.io/index.html"><span><i><img :src="'./mela-logo.png'" width="16" height="16"></i></span>MeLa Lab</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
         </div>
     </div>
 </template>
 
 <style scoped>
+.intro-pane a {
+    color: var(--primary-text);
+}
 
 </style>
