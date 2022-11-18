@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <li class="list-group-item news-item">
+    <li class="list-group-item border-0 border-bottom news-item">
         <p class="date">
             {{ newsitem.date }}
         </p>

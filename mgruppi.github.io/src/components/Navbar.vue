@@ -3,6 +3,11 @@ export default({
     setup() {
         
     },
+    methods:{
+        toggleColor(){
+            console.log(document.getElementById('color-switch').checked)
+        }
+    }
 })
 </script>
 
@@ -14,10 +19,10 @@ export default({
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                    <router-link to="/" class="nav-link">Home</router-link>
-                    <router-link to="/about" class="nav-link">About</router-link>
-                </div>
+                    <div class="navbar-nav">
+                        <router-link to="/" class="nav-link">Home</router-link>
+                        <router-link to="/about" class="nav-link">About</router-link>
+                    </div>
                 </div>
             </div>
         </nav>
