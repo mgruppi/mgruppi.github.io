@@ -7,6 +7,7 @@
             "pages": "283-287",
             "date": "07/2022",
             "type": "demo",
+            "authors": "Gruppi, M., Adali, S., Chen, P.Y.",
             "links": {
                 "Paper": "https://proceedings.mlr.press/v176/gruppi22a/gruppi22a.pdf",
                 "Demo": "https://sense.mgruppi.me"
@@ -18,6 +19,18 @@
             "pages": "12893-12901",
             "date": "06/2022",
             "type": "workshop",
+            "authors": "Gruppi, M., Adali, S., Salemi, M., Horne, B.D.",
+            "links": {
+                "Paper": "https://workshop-proceedings.icwsm.org/pdf/2021_62.pdf"
+            }
+        },
+        {
+            "title": "Tell Me Who Your Friends Are: Using Content Sharing Behavior for News Source Veracity Detection",
+            "venue": "Workshop Proceedings of the 16th International AAAI Conference on Web and Social Media",
+            "pages": "12893-12901",
+            "date": "06/2022",
+            "type": "workshop",
+            "authors": "Gruppi, M., Horne, BD, Adali, S.",
             "links": {
                 "Paper": "https://workshop-proceedings.icwsm.org/pdf/2021_61.pdf",
                 "Code": "https://github.com/mgruppi/NewsNetworkEmbedding"
@@ -29,6 +42,7 @@
             "pages": "1275-1284",
             "date": "05/2022",
             "type": "conference",
+            "authors": "Horne, BD., Gruppi, M., Joseph, K., Green, J., Wihbey, J.P., Adali, S.",
             "links": {
                 "Paper": "https://ojs.aaai.org/index.php/ICWSM/article/download/19379/19151",
                 "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GFE66K"
@@ -40,6 +54,7 @@
             "pages": "1342-1351",
             "date": "05/2022",
             "type": "conference",
+            "authors": "Trujillo, M.Z., Gruppi, M., Buntain, C., Horne, B.D.",
             "links": {
                 "Paper": "https://ojs.aaai.org/index.php/ICWSM/article/download/19386/19158",
                 "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KRD1VS"
@@ -51,6 +66,7 @@
             "pages": "13170-13172",
             "date": "03/2022",
             "type": "demo",
+            "authors": "Gruppi, M., Adali, S., Chen, P.Y.",
             "links": {
                 "Paper": "https://www.aaai.org/AAAI22Papers/DEMO-00312-GruppiM.pdf",
                 "Demo": "https://sense.mgruppi.me"
@@ -62,6 +78,7 @@
             "pages": "12893-12901",
             "date": "02/2021",
             "type": "conference",
+            "authors": "Gruppi, M., Adali, S., Chen, P.Y.",
             "links": {
                 "Paper": "https://ojs.aaai.org/index.php/AAAI/article/view/17525/17332",
                 "Code": "https://github.com/IBM/S4_semantic_shift"
@@ -73,6 +90,7 @@
             "pages": "12893-12901",
             "date": "12/2020",
             "type": "workshop",
+            "authors": "Gruppi, M., Adali, S., Chen, P.Y.",
             "links": {
                 "Paper": "https://aclanthology.org/2020.semeval-1.11/",
                 "Code": "https://github.com/mgruppi/schme"
@@ -84,6 +102,7 @@
             "pages": "139-140",
             "date": "07/2020",
             "type": "conference",
+            "authors": "Trujillo, M., Gruppi, M., Buntain, C., Horne, B.D.",
             "links": {
                 "Paper": "https://dl.acm.org/doi/pdf/10.1145/3372923.3404833",
                 "Data": "https://dataverse.harvard.edu/dataverse/mela."
@@ -95,6 +114,7 @@
             "pages": "245-254",
             "date": "12/2019",
             "type": "conference",
+            "authors": "Horne, B.D., Gruppi, M., Adali, S.",
             "links": {
                 "Paper": "https://ieeexplore.ieee.org/abstract/document/9014346"
             }
@@ -107,6 +127,7 @@
             "venue": "US Patent App. 17/161,778",
             "date": "08/2022",
             "type": "patent",
+            "authors": "Chen, P.Y., Gruppi, M., Adali, S.",
             "links": {
                 "Patent": "https://patentimages.storage.googleapis.com/f1/20/ef/f7fb7d5e0e1cca/US20220245348A1.pdf"
             }
@@ -118,6 +139,7 @@
             "title": "NELA-GT-2021: A Large Multi-Labelled News Dataset for the Study of Misinformation in News Articles",
             "date": "03/2022",
             "type": "preprint",
+            "authors": "Gruppi, M., Horne, B.D., Adali, S.",
             "links": {
                 "Paper": "https://arxiv.org/pdf/2203.05659",
                 "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RBKVBM",
@@ -128,6 +150,7 @@
             "title": "An exploration of unreliable news classification in Brazil and the US",
             "date": "06/2018",
             "type": "preprint",
+            "authors": "Gruppi, M., Horne, B.D., Adali, S.",
             "links": {
                 "Paper": "https://arxiv.org/pdf/1806.02875"
             }
