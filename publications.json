@@ -2,6 +2,18 @@
     "peer-reviewed":
     [
         {
+            "title": "SciLander: Mapping the Scientific News Landscape",
+            "venue": "To appear in Proceedings of the International AAAI Conference on Web and Social Media (ICWSM) 17",
+            "pages": "-",
+            "date": "06/2023",
+            "type": "demo",
+            "authors": "Gruppi, M., Smeros, P., Adali, S., Castillo, C., Aberer, K.",
+            "links": {
+                "Paper": "https://arxiv.org/pdf/2205.07970.pdf",
+                "Code": "https://github.com/mgruppi/SciLander"
+            }
+        },
+        {
             "title": "The SenSE Toolkit: A System for Visualization and Exploration of Semantic Shift",
             "venue": "NeurIPS 2021 Competitions and Demonstrations Track",
             "pages": "283-287",
@@ -14,7 +26,7 @@
             }
         },
         {
-            "title": "Tell Me Who Your Friends Are: Using Content Sharing Behavior for News Source Veracity Detection",
+            "title": "From Tweeting About News to Creating News Around Tweets: Characterizing Tweets Embedded in News Articles",
             "venue": "Workshop Proceedings of the 16th International AAAI Conference on Web and Social Media",
             "pages": "12893-12901",
             "date": "06/2022",
@@ -144,6 +156,15 @@
                 "Paper": "https://arxiv.org/pdf/2203.05659",
                 "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/RBKVBM",
                 "Code": "https://github.com/MELALab/nela-gt"
+            }
+        },
+        {
+            "title": "Do All Good Actors Look the Same? Exploring News Veracity Detection Across the US and the UK",
+            "date": "05/2020",
+            "type": "preprint",
+            "authors": "Horne, B.D., Gruppi, M., Adali, S.",
+            "links": {
+                "Paper": "https://arxiv.org/pdf/2006.01211.pdf"
             }
         },
         {
