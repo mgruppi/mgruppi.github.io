@@ -21,6 +21,7 @@ export default({
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <router-link to="/" class="nav-link">Home</router-link>
+                        <router-link to="/publications" class="nav-link">Publications</router-link>
                         <router-link to="/about" class="nav-link">About</router-link>
                     </div>
                 </div>

@@ -122,11 +122,19 @@ a:hover{
     font-size: 1.1em;
 }
 
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    color: var(--primary-text);
+  }
+
 @media (prefers-color-scheme: dark){
     body{
     background-color: #1d1e22;
     color: #f2f2f2;
     font-size: 14pt;
+    }
+
+    .table{
+        color: var(--text-light);
     }
 
     #news-feed{
@@ -165,6 +173,11 @@ a:hover{
         color: #272727;
         margin-bottom: 0px;
     }
+
+    .table{
+        color: var(--text-dark);
+    }
+
     .list-quick-links a:link{
         color: #272727;
     }
