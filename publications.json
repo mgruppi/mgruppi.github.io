@@ -168,6 +168,28 @@
             }
         },
         {
+            "title": "NELA-GT-2020: A Large Multi-Labelled News Dataset for the Study of Misinformation in News Articles",
+            "date": "03/2021",
+            "type": "preprint",
+            "authors": "Gruppi, M., Horne, B.D., Adali, S.",
+            "links": {
+                "Paper": "https://arxiv.org/abs/2102.04567",
+                "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CHMUYZ",
+                "Code": "https://github.com/MELALab/nela-gt"
+            }
+        },
+        {
+            "title": "NELA-GT-2019: A Large Multi-Labelled News Dataset for the Study of Misinformation in News Articles",
+            "date": "02/2020",
+            "type": "preprint",
+            "authors": "Gruppi, M., Horne, B.D., Adali, S.",
+            "links": {
+                "Paper": "https://ui.adsabs.harvard.edu/abs/2021arXiv210204567G/abstract",
+                "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO",
+                "Code": "https://github.com/MELALab/nela-gt"
+            }
+        },
+        {
             "title": "An exploration of unreliable news classification in Brazil and the US",
             "date": "06/2018",
             "type": "preprint",
