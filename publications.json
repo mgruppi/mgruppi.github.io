@@ -26,29 +26,6 @@
             }
         },
         {
-            "title": "From Tweeting About News to Creating News Around Tweets: Characterizing Tweets Embedded in News Articles",
-            "venue": "Workshop Proceedings of the 16th International AAAI Conference on Web and Social Media",
-            "pages": "12893-12901",
-            "date": "06/2022",
-            "type": "workshop",
-            "authors": "Gruppi, M., Adali, S., Salemi, M., Horne, B.D.",
-            "links": {
-                "Paper": "https://workshop-proceedings.icwsm.org/pdf/2021_62.pdf"
-            }
-        },
-        {
-            "title": "Tell Me Who Your Friends Are: Using Content Sharing Behavior for News Source Veracity Detection",
-            "venue": "Workshop Proceedings of the 16th International AAAI Conference on Web and Social Media",
-            "pages": "12893-12901",
-            "date": "06/2022",
-            "type": "workshop",
-            "authors": "Gruppi, M., Horne, BD, Adali, S.",
-            "links": {
-                "Paper": "https://workshop-proceedings.icwsm.org/pdf/2021_61.pdf",
-                "Code": "https://github.com/mgruppi/NewsNetworkEmbedding"
-            }
-        },
-        {
             "title": "NELA-Local: A Dataset of US Local News Articles for the Study of County-level News Ecosystems",
             "venue": "Proceedings of the International AAAI Conference on Web and Social Media (ICWSM) 16",
             "pages": "1275-1284",
@@ -60,6 +37,29 @@
                 "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/GFE66K"
             }
         },   
+        {
+            "title": "From Tweeting About News to Creating News Around Tweets: Characterizing Tweets Embedded in News Articles",
+            "venue": "Workshop Proceedings of the 16th International AAAI Conference on Web and Social Media",
+            "pages": "12893-12901",
+            "date": "06/2021",
+            "type": "workshop",
+            "authors": "Gruppi, M., Adali, S., Salemi, M., Horne, B.D.",
+            "links": {
+                "Paper": "https://workshop-proceedings.icwsm.org/pdf/2021_62.pdf"
+            }
+        },
+        {
+            "title": "Tell Me Who Your Friends Are: Using Content Sharing Behavior for News Source Veracity Detection",
+            "venue": "Workshop Proceedings of the 16th International AAAI Conference on Web and Social Media",
+            "pages": "12893-12901",
+            "date": "06/2021",
+            "type": "workshop",
+            "authors": "Gruppi, M., Horne, BD, Adali, S.",
+            "links": {
+                "Paper": "https://workshop-proceedings.icwsm.org/pdf/2021_61.pdf",
+                "Code": "https://github.com/mgruppi/NewsNetworkEmbedding"
+            }
+        },
         {
             "title": "The MeLa BitChute Dataset",
             "venue": "Proceedings of the International Conference on Web and Social Media (ICWSM) 16",
