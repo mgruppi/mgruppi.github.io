@@ -49,10 +49,10 @@ export default {
                                     <div class="pub-title user-select-all">
                                         {{item.title}}
                                     </div>
-                                    <div class="pub-authors user-select-all">
+                                    <div class="pub-authors">
                                         {{item.authors}}
                                     </div>
-                                    <div class="pub-venue user-select-all">
+                                    <div class="pub-venue fst-italic">
                                         {{item.venue}}
                                     </div>
                                 </div>
