@@ -130,6 +130,16 @@
             "links": {
                 "Paper": "https://ieeexplore.ieee.org/abstract/document/9014346"
             }
+        },
+        {
+            "title": "An exploration of unreliable news classification in Brazil and the US",
+            "venue": "Third International Workshop on News and Public Opinion at ICWSM",
+            "date": "06/2018",
+            "type": "preprint",
+            "authors": "Gruppi, M., Horne, B.D., Adali, S.",
+            "links": {
+                "Paper": "https://arxiv.org/pdf/1806.02875"
+            }
         } 
     ],
     "patent":
@@ -187,15 +197,6 @@
                 "Paper": "https://ui.adsabs.harvard.edu/abs/2021arXiv210204567G/abstract",
                 "Data": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO",
                 "Code": "https://github.com/MELALab/nela-gt"
-            }
-        },
-        {
-            "title": "An exploration of unreliable news classification in Brazil and the US",
-            "date": "06/2018",
-            "type": "preprint",
-            "authors": "Gruppi, M., Horne, B.D., Adali, S.",
-            "links": {
-                "Paper": "https://arxiv.org/pdf/1806.02875"
             }
         }
     ]
