@@ -7,9 +7,9 @@ export default({
     },
     data(){
         return {
-            name: 'Maurício Gruppi',
-            position: 'PhD Candidate',
-            field: 'Computer Science',
+            name: 'Maurício Gruppi, PhD',
+            position: 'Postdoctoral Researcher',
+            field: 'Department of Cognitive Science',
             school: 'Rensselaer Polytechnic Institute',
 
             keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Representation Learning",
@@ -25,16 +25,6 @@ export default({
 
 <template>
     <div id="content-home" class="">
-        <div class="alert alert-warning d-flex justify-content-center p-1">
-            <h5>
-                <span><i class="fas fa-star m-0 p-0"></i></span>
-                I am on the job market. Interested in academia and industry research positions!
-                [<a href="mailto:mauricio.gruppi+job@gmail.com" style="color: var(--color2)">Contact</a>]
-            </h5>
-            <!-- <h5>
-                <a href="mailto:mauricio.gruppi+job@gmail.com" style="color: var(--color2)">Contact</a> for openings!
-            </h5> -->
-        </div>
         <div class="row justify-content-md-center p-0 m-0">
 
 <!--                    MIDDLE COLUMN-->
