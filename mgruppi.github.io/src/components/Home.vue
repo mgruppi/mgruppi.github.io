@@ -8,8 +8,8 @@ export default({
     data(){
         return {
             name: 'Maurício Gruppi, PhD',
-            position: 'Postdoctoral Researcher',
-            field: 'Department of Cognitive Science',
+            position: 'Postdoctoral Researcher at IDEA',
+            field: 'Computer Science',
             school: 'Rensselaer Polytechnic Institute',
 
             keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Representation Learning",
