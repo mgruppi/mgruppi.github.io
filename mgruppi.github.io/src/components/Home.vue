@@ -8,7 +8,7 @@ export default({
     data(){
         return {
             name: 'Maurício Gruppi, PhD',
-            position: 'Postdoctoral Researcher at IDEA',
+            position: 'Postdoctoral Researcher at <a href="https://idea.rpi.edu/">IDEA</a>',
             field: 'Computer Science',
             school: 'Rensselaer Polytechnic Institute',
 
@@ -37,7 +37,7 @@ export default({
                     <div class="col-sm-12 col-md-5">
                         <h1> {{ this.name }} </h1>
                         <ul class="list-unstyled mx-1 m-0">
-                            <li> {{ this.position }}</li>
+                            <li> <div v-html="this.position"></div></li>
                             <li> {{ this.field }}</li>
                             <li> {{ this.school }}</li>
                         </ul>
@@ -61,7 +61,7 @@ export default({
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-sm-12 col-md-7">
+                    <div class="col">
                         <div class="intro-pane p-4">
                         <p>I work on Natural Language Processing <b>methods</b> and <b>applications</b> to linguistic shift detection.</p>
                         <p>
@@ -85,7 +85,7 @@ export default({
                         </p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-5">
+                    <div class="col-5">
                         <div id="news-feed" class="card pb-2">
                             <div class="card-header py-0">
                                 <h4 class="m-0"> News </h4>
@@ -95,7 +95,6 @@ export default({
                             </div>
                         </div>
                     </div>
-                
                 </div>
             </div>
         </div>

@@ -47,7 +47,7 @@ export default {
             <h3>Peer-reviewed</h3>
             <PublicationsTable :data="this.data['peer-reviewed']"></PublicationsTable>
         
-            <h3>Other (non-peer-reviewed or non-archival)</h3>
+            <h3>Other (technical reports/non-peer-reviewed)</h3>
             <PublicationsTable :data="this.data['other']"></PublicationsTable>
       
             <h3>Patent</h3>
