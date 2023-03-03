@@ -61,7 +61,7 @@ export default({
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col">
+                    <div class="col-md-7">
                         <div class="intro-pane p-4">
                         <p>I work on Natural Language Processing <b>methods</b> and <b>applications</b> to linguistic shift detection.</p>
                         <p>
@@ -85,7 +85,7 @@ export default({
                         </p>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-md-5">
                         <div id="news-feed" class="card pb-2">
                             <div class="card-header py-0">
                                 <h4 class="m-0"> News </h4>
