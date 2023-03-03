@@ -13,7 +13,7 @@ export default({
             school: 'Rensselaer Polytechnic Institute',
 
             keywords: ["Artificial Intelligence", "Natural Language Processing", "Machine Learning", "Representation Learning",
-                        "Computational Sociolinguistics"]
+                        "Computational Sociolinguistics"],
         }
     },
     components: { 

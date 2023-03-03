@@ -1,12 +1,19 @@
 <script>
 export default({
     setup() {
-        
+
     },
     methods:{
         toggleColor(){
             console.log(document.getElementById('color-switch').checked)
+        },
+
+        toggleDarkMode(){
+            this.$emit("toggleEvent");
         }
+    },
+    props: {
+        darkMode: Boolean
     }
 })
 </script>
@@ -23,6 +30,12 @@ export default({
                         <router-link to="/" class="nav-link">Home</router-link>
                         <router-link to="/publications" class="nav-link">Publications</router-link>
                         <router-link to="/about" class="nav-link">About</router-link>
+                    </div>
+                    <div class="darkModeButton d-flex flex-grow-1 justify-content-end px-2" @click="toggleDarkMode()">
+                        <Transition>
+                            <i v-if="this.darkMode" class="fas fa-moon position-absolute"></i>
+                            <i v-else class="fas fa-sun position-absolute"></i>
+                        </Transition>
                     </div>
                 </div>
             </div>
@@ -47,6 +60,16 @@ export default({
     a:focus {
         color: var(--text-dark);
     }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 
 </style>

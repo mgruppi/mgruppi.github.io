@@ -126,6 +126,16 @@ a:hover{
     color: var(--primary-text);
   }
 
+
+.darkModeButton{
+    transition: 0.25s;
+}
+
+.darkModeButton:hover{
+    cursor: pointer;
+    color: var(--primary-text);
+}
+
 @media (prefers-color-scheme: dark){
     body{
     background-color: #1d1e22;
@@ -200,4 +210,70 @@ a:hover{
     .navbar a:hover {
         color: var(--text-dark);
     }
+}
+
+
+/* ====================== */
+/* Light mode definitions */
+/* ====================== */
+.body-light {
+    background-color: #f2f2f2;
+    color: #1d1e22;
+    font-size: 14pt;
+}
+.body-light p.date{
+    /* font-size: 12pt; */
+    color: #414141;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.body-light p.news{
+    /* font-size: 12pt; */
+    color: #272727;
+    margin-bottom: 0px;
+}
+
+.body-light .table{
+    color: var(--text-dark);
+}
+
+.body-light .list-quick-links a:link{
+    color: #272727;
+}
+.body-light .news-links{
+    /* font-size: 16px; */
+    color: #272727;
+    margin-bottom: 0px;
+}
+
+.body-light #news-feed{
+    background-color: #FFFFFF;
+}
+
+.body-light .news-item{
+    background-color: #FFFFFF;
+}
+
+.body-light .news-links a{
+    /* font-size: 14px; */
+    color: #272727;
+}
+.body-light .list-links a{
+    color: #272727;
+}
+.body-light .navbar a {
+    color: var(--text-dark);
+}
+.body-light .navbar a:hover {
+    color: var(--text-dark);
+}
+
+body {
+    transition: background-color 0.2s ease;
+}
+#news-feed {
+    transition: background-color 0.2s ease;
+}
+.news-item {
+    transition: background-color 0.2s ease;
 }
