@@ -28,7 +28,7 @@ export default({
         <div class="row justify-content-md-center p-0 m-0">
 
 <!--                    MIDDLE COLUMN-->
-            <div class="col m-0 mb-2 px-0 pr-2">
+            <div class="col m-0 mb-2 px-2">
                 <div class="row my-1">
                     <div class="d-flex justify-content-center align-items-center col-sm-12 col-md-2 position-relative profile-image">
                         <img :src="'/me.jpg'">
@@ -62,7 +62,7 @@ export default({
 
                 <div class="row mt-3">
                     <div class="col-md-7">
-                        <div class="intro-pane p-4">
+                        <div class="intro-pane p-0">
                         <p>I work on Natural Language Processing <b>methods</b> and <b>applications</b> to linguistic shift detection.</p>
                         <p>
                             The focus of my research is to model the linguistic differences that can be inferred from data, 
