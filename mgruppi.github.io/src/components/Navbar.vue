@@ -33,7 +33,7 @@ export default({
                         <router-link to="/about" class="nav-link">About</router-link>
                     </div>
                 </div>
-                <div class="darkModeButton d-flex flex-grow-1 justify-content-end px-2" @click="toggleDarkMode()">
+                <div class="darkModeButton d-flex flex-grow-1 justify-content-end px-2 mb-4" @click="toggleDarkMode()">
                         <Transition>
                             <i v-if="this.darkMode" class="fas fa-moon position-absolute"></i>
                             <i v-else class="fas fa-sun position-absolute"></i>
