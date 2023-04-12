@@ -8,7 +8,8 @@ export default({
     data(){
         return {
             name: 'Maurício Gruppi, PhD',
-            position: 'Postdoctoral Researcher at <a href="https://idea.rpi.edu/">IDEA</a>',
+            // position: 'Postdoctoral Researcher at <a href="https://idea.rpi.edu/">IDEA</a>',
+            position: 'PhD in Computer Science',
             field: 'Computer Science',
             school: 'Rensselaer Polytechnic Institute',
 
