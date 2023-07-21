@@ -1,0 +1,79 @@
+[
+  {
+
+    "date": "2022-11-10",
+    "text": "I successfully defended my PhD thesis!"
+   },
+   {
+    "date":"2022-08-02",
+    "text": "Our paper 'SciLander: Mapping the Scientific News Landscape' was accepted at ICWSM 2023!",
+    "links":{
+      "Pre-print": "https://arxiv.org/pdf/2205.07970.pdf"
+    }
+  },
+  {
+    "date": "2022-06-01",
+    "text": "I have started working as a research extern at <a href='https://research.ibm.com/labs/watson/'>IBM Thomas J. Watson Research Center </a> (summer of 2022)."
+  },
+  {
+   "date": "2022-03-12",
+   "text": "The newest version of the NELA-GT dataset has been released. This is a dataset of news articles designed for the study of news credibility. It contains news articles from hundreds of sources. Sources are labeled according to a reliability score.",
+   "links":{
+    "Dataset": "https://github.com/MELALab/nela-gt"
+   }  
+  },
+ {
+    "date": "2021-09-09",
+    "text": "We have released SenSE, a system for Semantic Shift Exploration and Visualization. Check it out <a href='https://sense.mgruppi.me'>here</a>.",
+    "links": {
+      "Demo": "https://sense.mgruppi.me"
+    }
+  },
+  {
+    "date": "2021-02-10",
+    "text": "Check out the <a href=\"https://github.com/MELALab/nela-gt\">latest version</a> of our news source credibility dataset. See the GitHub repository for usage examples.",
+    "links": {
+          "Paper": "https://arxiv.org/pdf/2102.04567.pdf",
+          "Dataset": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CHMUYZ",
+          "Code": "https://github.com/MELALab/nela-gt"
+    }
+  },
+  {
+    "date": "2021-01-15",
+    "text": "We released the pre-print of our paper \"Tell Me Who Your Friends Are: Using Content Sharing Behavior for News Source Veracity Detection\".",
+    "links": {
+          "Paper": "https://arxiv.org/abs/2101.10973"
+    }
+  },
+
+  {
+    "date": "2020-12-02",
+    "text": "Our paper \"Fake it Till You Make it: Self-Supervised Semantic Shifts for Monolingual Word Embedding Tasks\" got accepted at AAAI-2021.",
+    "links": {
+          "Paper": "https://arxiv.org/pdf/2102.00290.pdf",
+          "Code": "https://github.com/IBM/S4_semantic_shift"
+    }
+  },
+  {
+    "date": "2020-06-08",
+    "text": "Paper presented at <a href=\"https://sites.google.com/view/icwsm2020datachallenge\">ICWSM 2020 Data Challenge </a> on Misinformation and Abusive behavior in social media.",
+    "links": {
+          "Paper": "https://arxiv.org/pdf/2006.01211.pdf"
+    }
+  },
+  {
+    "date": "2020-03-21",
+    "text": "We have released <a href='https://github.com/melalab/nela-gt-2019/'>NELA-GT-2019</a> - a dataset for assessment of news producer credibility.",
+    "links": {
+          "Paper": "https://arxiv.org/abs/2003.08444",
+          "Code": "https://github.com/melalab/nela-gt-2019/",
+          "Dataset": "https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO"
+    }
+  },
+  {
+  "date": "2020-03-13",
+  "text": "RPI-Trust group participated in SemEval-2020 Task 1: Unsupervised Lexical Semantic Change Detection.",
+  "links": {"Paper": "https://www.aclweb.org/anthology/2020.semeval-1.11/",
+            "Code": "https://github.com/mgruppi/schme"}
+  }
+  ]

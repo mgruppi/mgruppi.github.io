@@ -1,0 +1,16 @@
+[
+    {
+        "date": "2022-05-07",
+        "title": "Blog?",
+        "content": "I am trying to set up a blog. Behold, cat pics!",
+        "author": "Maurício",
+        "images": ["https://mgruppi.github.io/images/cafecito_wings.jpg", "https://mgruppi.github.io/images/cafecito_assistindo.jpg", 
+                   "https://mgruppi.github.io/images/cafecito_largado.jpeg"]
+    },
+    {
+        "date": "2022-05-08",
+        "title": "Second post",
+        "content": "This will be fun.",
+        "author": "Maurício"
+    }
+]
